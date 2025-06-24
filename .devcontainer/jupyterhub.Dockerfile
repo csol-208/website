@@ -1,3 +1,3 @@
-FROM ghcr.io/boettiger-lab/k8s
+FROM ghcr.io/rocker-org/ml-spatial
 
 
