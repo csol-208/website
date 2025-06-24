@@ -1,0 +1,134 @@
+[
+  {
+    "objectID": "overview/syllabus.html#textbook",
+    "href": "overview/syllabus.html#textbook",
+    "title": "",
+    "section": "Textbook",
+    "text": "Textbook\nThere is no required textbook for this course at this time. Recommended readings will be indicated when available and further developed during this course."
+  },
+  {
+    "objectID": "overview/syllabus.html#enrollment",
+    "href": "overview/syllabus.html#enrollment",
+    "title": "",
+    "section": "Enrollment",
+    "text": "Enrollment\n\nLike too many UC Berkeley courses, ESPM-157 is oversubscribed. Registration for ESPM-157 follows the campus staged process with reserved seats for several of the specific majors in the host department (ESPM) as determined by Rasser College of Natural Resources (RCNR) scheduling and academic advising staff. All seats go quickly, so please plan to enroll as soon as you are eligible to do so. Students in ESPM-based majors should speak to their major adviser about enrolling in ESPM-157 and reserved seats. Please do not contact course instructors about permission to enroll or enrollment codes for reserved seats, this process is handled by RCNR Scheduling to be as fair and equitable as possible across student groups needing this course to meet graduation requirements. We are constantly exploring ways to expand access to this course without degrading the educational experience. Graduate students interested in 157 should consider ESPM 288, usually offered each Spring."
+  },
+  {
+    "objectID": "overview/syllabus.html#format-and-assessment",
+    "href": "overview/syllabus.html#format-and-assessment",
+    "title": "",
+    "section": "Format and assessment",
+    "text": "Format and assessment\n\nThis course centers around our in-class experience. We meet for 2 hours twice a week for a hands-on, group-based experience facilitated by your instructors. Lectures will not be recorded because there will not be lectures. Built on decades of education research and delivered in the most recent state-of-the art Active Learning Classroom on campus, this course emphasizes a collaborative learning-by-doing approach in all elements. Today, there are a wealth of lectures in data science that can be viewed freely without a university tuition. Education research shows the value of hands-on, peer based experience which we have the opportunity to create in our classroom. We recognize that things happen and students will not be penalized if they cannot make a session\nThe course is built on four open-ended modules and final project. In each, students will work in pairs (and occassionally individually) to replicate or refute the main scientific findings of a key paper or result in global change ecology. Each module is selected to introduce a core set of competencies in data science, fundamental concepts in global change ecology, and new skills for reproducible research and data-driven communication."
+  },
+  {
+    "objectID": "overview/syllabus.html#prerequisites",
+    "href": "overview/syllabus.html#prerequisites",
+    "title": "",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nThis course has no formal prerequisites. Prior experience with programming in any language can be helpful. This course is uniquely structured with open-ended assignments that can be accessible to first time programmers or challenge experienced software developers."
+  },
+  {
+    "objectID": "overview/syllabus.html#office-hours",
+    "href": "overview/syllabus.html#office-hours",
+    "title": "",
+    "section": "Office hours",
+    "text": "Office hours\n\nTBD"
+  },
+  {
+    "objectID": "overview/syllabus.html#communication",
+    "href": "overview/syllabus.html#communication",
+    "title": "",
+    "section": "Communication",
+    "text": "Communication\nGuided by education research, our course design seeks to emulate the feel and experience at the cutting edge of Data Science research today. Technical communication platforms are a core component of this. Learning Management Systems (LMS) typically used in instructional settings do not provide an authentic experience. Students will be introduced to communication and collaboration tools including GitHub and Slack for most communication purposes."
+  },
+  {
+    "objectID": "overview/syllabus.html#grading",
+    "href": "overview/syllabus.html#grading",
+    "title": "",
+    "section": "Grading",
+    "text": "Grading\nGrades will be assigned using the following weighted components:\n\n\n\ncomponent\nweight\n\n\n\n\nFinal Project\n30%\n\n\nHW Exercises\n60%\n\n\nParticipation\n10%\n\n\n\nGrading rubrics will usually be provided with each module. It is expected that students in this course will have a wide range of prior experience and ability, and grading will aim to reflect learning and effort in the course. This course is not graded “on a curve” compared to other students. Grades will reflect relative individual learning and improvement from earlier benchmarks. It is certainly possible for all students to receive high grades in this course if all of you show mastery of the material and completely attempt all assignments. However, high competency that does not reflect learning gains or the stylistic expectations of this course may score quite poorly. Our course prizes concise, semantic code supported by clear and insightful text and figures.\nAll assignments are due by immediately before the start of class on the day indicated. Assignments should be submitted as instructed."
+  },
+  {
+    "objectID": "overview/syllabus.html#make-up-policy",
+    "href": "overview/syllabus.html#make-up-policy",
+    "title": "",
+    "section": "Make-up policy",
+    "text": "Make-up policy\nLate assignments may be docked 20% and will not be accepted more than 48 hours late except in cases of genuine emergencies or in cases where this has been discussed and approved in advance. This policy is based on the idea that in order to learn how to use computers well, students should be working with them at multiple times each week. Time has been allotted in class for working on assignments and students are expected to work on them outside of class. It is intended that you should have finished as much of the assignment as you can based on what we have covered in class by the following class period. Therefore, even if something unexpected happens at the last minute you should already be close to done with the assignment. This policy also allows rapid feedback to be provided to students by returning assignments quickly."
+  },
+  {
+    "objectID": "overview/syllabus.html#code-of-conduct",
+    "href": "overview/syllabus.html#code-of-conduct",
+    "title": "",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nOur course is committed to providing a respectful and welcoming environment to all participants. Please review the Open Code of Conduct guidelines for respectful and harassment-free conduct. To report an incident or request more information, contact the UC Berkeley Office for the Prevention of Harassment and Discrimination by emailing ask_ophd@berkeley.edu or by phone (510) 643-7985."
+  },
+  {
+    "objectID": "overview/syllabus.html#learning-cooperatively",
+    "href": "overview/syllabus.html#learning-cooperatively",
+    "title": "",
+    "section": "Learning Cooperatively",
+    "text": "Learning Cooperatively\nI encourage you to discuss all of the course activities with your friends and classmates and your instructional team as you are working on them. You will definitely learn more in this class if you work with others than if you do not. Ask questions, answer questions, and share ideas liberally. Please identify your collaborators by name on all assignments.\nSince you’re working collaboratively, keep your project partner and the course instructor informed. If some medical or personal emergency takes you away from the course for an extended period, or if you decide to drop the course for any reason, please don’t just disappear silently! You should inform your project partner, so that nobody is depending on you to do something you can’t finish."
+  },
+  {
+    "objectID": "overview/syllabus.html#generative-ai",
+    "href": "overview/syllabus.html#generative-ai",
+    "title": "",
+    "section": "Generative AI",
+    "text": "Generative AI\nGenerative AI is very much a part of the modern data science landscape and will be a part of our course. This technology also raises legal, ethical and environmental issues, as technology has done before. We will seek to address and discuss both the opportunities and challenges through hands-on experience with examples of this technology."
+  },
+  {
+    "objectID": "overview/syllabus.html#quizexam-policy",
+    "href": "overview/syllabus.html#quizexam-policy",
+    "title": "",
+    "section": "Quiz/Exam Policy",
+    "text": "Quiz/Exam Policy\nThere are no quizzes or in-class exams in this course."
+  },
+  {
+    "objectID": "overview/syllabus.html#course-technology",
+    "href": "overview/syllabus.html#course-technology",
+    "title": "",
+    "section": "Course Technology",
+    "text": "Course Technology\nStudents should bring a laptop and charger to each class. You do not need a fancy machine – any device with a keyboard, web browser and wifi should be sufficient to connect to our cloud-based compute platform which will be doing all the heavy lifting. If you don’t have access to a laptop please request a device through our campus STEP program."
+  },
+  {
+    "objectID": "overview/syllabus.html#disability-accommodations",
+    "href": "overview/syllabus.html#disability-accommodations",
+    "title": "",
+    "section": "Disability accommodations",
+    "text": "Disability accommodations\nOur course aspires towards universal design principles to minimize the need for common accommodations such as extra time on written exams or recording devices for lectures (we have no timed exams and no lectures). We are always keen to improve the design and provide additional accomdations to make this course accessible for all students.\nIf you need an accommodation for a disability, if you have information your wish to share with the instructor about a medical emergency, or if you need special arrangements if the building needs to be evacuated, please inform the instructor as soon as possible.\nIf you are not currently listed with DSP (the Disabled Students’ Program) and believe you might benefit from their support, please apply online at https://dsp.berkeley.edu."
+  },
+  {
+    "objectID": "overview/pedagogy.html",
+    "href": "overview/pedagogy.html",
+    "title": "",
+    "section": "",
+    "text": "Flipped classroom\nAnti-racist pedagogy\nSelf-paced learning\nActivating prior knowledge\nPeer Instruction\nStudent Learning communities\nDifferentiated instruction\nPortfolio-based learning / assessment\nAuthentic assessments\nIndividual tutoring/coaching\nRecorded lectures & course media\nStudent metacognitive practice\nUniversal design for learning\nActive learning"
+  },
+  {
+    "objectID": "index.html#spring-2025",
+    "href": "index.html#spring-2025",
+    "title": "Data Science for Climate Solutions",
+    "section": "Spring 2025",
+    "text": "Spring 2025\n\n\n\nLogistics\nℹ️\n\n\n\n\n👤 Instructor\nCarl Boettiger\n\n\n🏛 Location\nTBD\n\n\n📅 Days\nMon / Weds\n\n\n⏰ Time\n10:10a - 11:50a",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Data Science for Climate Solutions",
+    "section": "Overview",
+    "text": "Overview",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "overview/schedule.html",
+    "href": "overview/schedule.html",
+    "title": "",
+    "section": "",
+    "text": "🧰 Module Overview\n\n:gutter: 3\n:::{grid-item-card} 🌡 Module 1: Global Climate Change :columns: 6\n🖺 Mann et al (1998)\n🛠 Concepts: Tabular data, git\nCommunication: declarative visualization, jupyter notebooks\n+++  climate template \n\n:::{grid-item-card} 🐟 Module 2: Global Fisheries Collapse :columns: 6\n🖺 Worm et al (2006)\n🛠 Concepts: Relational databases\n📈 Communication: Myst, pdf/LaTeX, html outputs\n+++  fish template \n:::\n:::{grid-item-card} 🛰 Module 3: Environmental Justice :columns: 6\n🖺 Schell et al (2020)\n🛠 Concepts: Geospatial data structures + analysis\n📈 Communication: Geospatial visualziation\n+++  spatial template \n:::\n:::{grid-item-card} 🤖 Module 4: Language Models and Decision support tools? :columns: 6\n🖺 TBD\n🛠 LLMs, RAG,\n📈 streamlit, reactive design\n+++  llm template \n:::\n::::\n\n\n\n📅 Weekly Plan\nHold on tight and don’t put too much faith in this.\n\n\n\nWeek\nModule\nTopics\nReading links\n\n\n\n\nweek 1\n🌡\nGitHub, JupyterHub\n{📖\n\n\nweek 2\n🌡\nviz: seaborn\n{📖\n\n\nweek 3\n🌡\ndata: pandas / ibis\n{📖\n\n\nweek 4\n🌡\nCollab, PRs, CI\n{📖\n\n\nweek 5\n🐟\nModule intro\n{📖\n\n\nweek 6\n🐟\nRDBs, joins\n{📖\n\n\nweek 7\n🐟\ndiscovery\n{📖\n\n\nweek 8\n🛰\nspatial data types\n{📖\n\n\nweek 9\n🛰\nspatial data viz\n{📖\n\n\nweek 10\n🛰\nspatial data analysis\n{📖\n\n\nweek 11\n🛰\nputting it together\n{📖\n\n\nweek 12\n🤖\nLLMs\n{📖\n\n\nweek 13\n🤖\nLLMs+RAG?\n{📖\n\n\nweek 14\n🤖\nstreamlit\n{📖\n\n\nweek 15\n🎓\nFinal Projects\n{📖"
+  }
+]
