@@ -18,6 +18,6 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
       - name: Build the Docker image
-        run: docker build .devcontainer -f .devcontainer/jupyterhub.Dockerfile --tag ghcr.io/${GITHUB_REPOSITORY}
+        run: docker build .devcontainer --tag ghcr.io/${GITHUB_REPOSITORY}
       - name: Publish
         run: docker push ghcr.io/${GITHUB_REPOSITORY}
