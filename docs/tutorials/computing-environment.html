@@ -12,10 +12,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><meta charset="utf-8">
+<link href="../site_libs/bootstrap/bootstrap-ed9adf2df2f209da4d145c49e49d5d89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Computing Environments</title>
@@ -177,18 +177,7 @@
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="bg-gradient-dark">
-<div class="page-header min-vh-85" style="background-image: url(../assets/img/methane_bubbles.jpg);">
-<span class="mask bg-gradient-dark opacity-3"></span>
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8 text-center mx-auto my-auto">
-<h1 class="text-white">Computing Environments</h1>
-<p class="lead mb-4 text-white opacity-8"></p>
-</div>
-</div>
-</div>
-</div></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/computing-environment.html">Platforms</a></li><li class="breadcrumb-item"><a href="../tutorials/computing-environment.html">Computing Environments</a></li></ol></nav><h1 class="text-white title display-7">Computing Environments</h1></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -384,7 +373,18 @@
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
+<header id="title-block-header" class="bg-gradient-dark">
+<div class="page-header min-vh-85" style="background-image: url(../assets/img/methane_bubbles.jpg);">
+<span class="mask bg-gradient-dark opacity-3"></span>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center mx-auto my-auto">
 
+<p class="lead mb-4 text-white opacity-8"></p>
+</div>
+</div>
+</div>
+</div></header>
 
 
 
@@ -524,8 +524,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -636,7 +634,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

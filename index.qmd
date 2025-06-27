@@ -1,10 +1,10 @@
 ---
-title: "ESPM-288: Reproducible & Collaborative Data Science"
+title: "Data Science for Climate Solutions"
 format: html
 ---
 
 
-<img align="right" src="/assets/img/espm-288.png" width="150" alt="logo">
+<img align="right" src="/assets/img/climate-solutions.png" width="150" alt="logo">
 
 
 
@@ -17,26 +17,34 @@ format: html
 Logistics     | ℹ️ 
 --------------|-----------------------------------------------
 👤 Instructor | [Carl Boettiger](https://carlboettiger.info)
-🏛 Location   | Mulford 103
+🏛 Location   | TBD
 📅 Days       | Mon / Weds
-⏰ Time       | 10:10a - 11:30a
+⏰ Time       | 9:00a - 11:50a
+
+: {.striped .hover}
+
+## Schedule
+
+*Preliminary and subject to change*
+
+| Session | Module   | Description | Reading | 
+| ---|:--------:|:----------- |:---------:|
+| 1  | <i class="bi bi-egg-fill"></i> |  Course overview and objectives. Team creation. ([<i class="bi bi-display-fill"></i>](https://docs.google.com/presentation/d/1O7XmzI5u7d86CcjMh9rZ3_ZEkwuLaUgrB58FC6POGHs/edit?usp=sharing)) | (none) |
+| 2  | <i class="bi bi-globe"></i> | **Module 1 intro**: Measuring global environmental footprint by region and industry  |  [<i class="bi bi-book-fill"></i> Boakes et al.  (2024)](https://doi.org/10.1038/s41467-024-49999-z), [<i class="bi bi-book-fill"></i> Stadler et al (2018)](https://doi.org/10.1111/jiec.12715) | 
+| 3  | <i class="bi bi-globe"></i> | Tidy Data: Python, ibis, scalable solutions | [<i class="bi bi-book-fill"></i> Wickman (2014)](https://doi.org/10.18637/jss.v059.i10), [<i class="bi bi-book-fill"></i> Long (2023)](https://www.youtube.com/watch?v=Pa1PNfoOp-I)|  
+| 4  | <i class="bi bi-globe"></i> | Interactive Dashboards | [<i class="bi bi-book-fill"></i> Streamlit](https://docs.streamlit.io/get-started/tutorials/create-an-app) |  
+| 5  | <i class="bi bi-globe"></i> | Ethics and power in LLM models: discussion | [<i class="bi bi-book-fill"></i> AI energy consumption](https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/genai-power-consumption-creates-need-for-more-sustainable-data-centers.html), [<i class="bi bi-book-fill"></i> Bender et al (2021)](https://doi.org/10.1145/3442188.3445922) |  
+| 6  | <i class="bi bi-tree-fill"></i> | **Module 2 Intro**: Nature-related fiancial disclosures  | [<i class="bi bi-book-fill"></i> Risks](https://www.ngfs.net/sites/default/files/medias/documents/ngfs-conceptual-framework-nature-risks.pdf), [<i class="bi bi-book-fill"></i> Credits](https://www.biodiversitycreditalliance.org/wp-content/uploads/2025/05/377455_High_Level_Principles_to_Guide_the_Biodiversity_Credit_Market_En_v7_May-2025.pdf) |  
+| 7  | <i class="bi bi-tree-fill"></i> | Intro to Cloud-native geospatial  | [<i class="bi bi-book-fill"></i>](#) |  
+| 8  | <i class="bi bi-tree-fill"></i> | Vector data | [<i class="bi bi-book-fill"></i>](#) |  
+| 9  | <i class="bi bi-tree-fill"></i> | Spatial indices | [<i class="bi bi-book-fill"></i>](#) |  
+| 10 | <i class="bi bi-tree-fill"></i> | Raster data | [<i class="bi bi-book-fill"></i>](#) |  
+| 11 | <i class="bi bi-mortarboard-fill"></i>  | Final Projects  | [<i class="bi bi-book-fill"></i>](#) |  
+| 12 | <i class="bi bi-mortarboard-fill"></i>  | Final Projects  | [<i class="bi bi-book-fill"></i>](#) |  
+| 13 | <i class="bi bi-mortarboard-fill"></i>  | Final Project Presentations  | [<i class="bi bi-book-fill"></i>](#) |  
+| 14 | <i class="bi bi-mortarboard-fill"></i>  | Final Project Presentations | [<i class="bi bi-book-fill"></i>](#) |  
 
 
+: {.striped .hover}
 
 
-## Overview
-
-This Spring semester, ESPM 288 Reproducible & Collaborative Data Science will be providing an introduction to Python and explore reliable, responsible, and reproducible use of Large Language Models (LLMs) in the data science context.  
-
-Our approach to Python will closely parallel tidyverse concepts and best practices (dplyr and ggplot-esque syntax) and emphasize simple, semantic code and scalable solutions appropriate for small or large data.  We will cover git/GitHub, Relational database concepts, cloud native data, and geospatial data use.  
-
-
-LLMs are here and beginning to impact our profession, for better & worse. Critics and proponents alike discuss ideas like "the impact of AI" -- but as our S&E colleagues already know the message of Langdon Winner's warning 4 decades ago against "naive technological determinism"
-
-> the idea that technology develops as the sole result of an internal dynamic, and then, unmediated by any other influence, molds society to fit its patterns. Those who have not recognized the ways in which technologies are shaped by social and economic forces have not gotten very far.
-
-Yet Winner also encouraged us to examine the technology itself, as he memorably put it "Do artifacts have politics?"  We shall attempt to take him up on both accounts.  The social and economic forces shaping LLMs built here at UC Berkeley are not the same as those behind the doors of OpenAI or Microsoft, and the artifacts each has created are different.  
-
-Through hands-on experiences, we will seek a more nuanced understanding of how this technology works and fails, and explore some of the carefully constrained and innovative ways that some LLMs can be combined with existing programming tools to generate reliable, reproducible, secure, and energy-efficient applications.  
-
-ESPM-288 uses a self-paced course design that encourages students to practice the skills we introduce in the context of their own research interests and questions.  We aim for material that should be accessible to new programmers but also something new even to experienced programmers.  This year's syllabus is experimental and will at times go pear-shaped.   (almost all that we do in python will have simple translation to R, including LLM use via https://elmer.tidyverse.org/)

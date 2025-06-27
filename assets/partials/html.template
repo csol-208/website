@@ -38,15 +38,9 @@ $endif$
   <![endif]-->
 </head>
 
-
-<body class="nav-sidebar">
-$for(include-before)$
-$include-before$
-$endfor$
-
 <header id="title-block-header"  class="bg-gradient-dark">
-<div class="page-header min-vh-85" style="background-image: url($title-block-banner$);">
-<span class="mask bg-gradient-dark opacity-3"></span>
+<div class="page-header min-vh-65" style="background-image: url($title-block-banner$);">
+<span class="mask bg-gradient-dark opacity-1"></span>
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center mx-auto my-auto">
@@ -56,6 +50,13 @@ $endfor$
 </div>
 </div>
 </header>
+
+<body class="nav-sidebar">
+$for(include-before)$
+$include-before$
+$endfor$
+
+
 
 
 $if(toc)$
