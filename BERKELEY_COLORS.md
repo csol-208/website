@@ -54,8 +54,24 @@ The four course modules use Berkeley's secondary palette for visual distinction:
 
 - **Oski Gold** (#A57327) - Module 1: The AI-Data Analyst
 - **Tilden** (#005F61) - Module 2: The Climate Mapper  
-- **Soybean** (#D7D182) - Module 3: The AI Researcher
+- **Soybean** (#859438) - Module 3: The AI Researcher
 - **Wellman Tile** (#D9661F) - Module 4: The Capstone Studio (named after 311 Wellman Hall!)
+
+## Color Accessibility
+
+Following Berkeley's [accessibility guidelines](https://identity.berkeley.edu/visual-identity/color-palette/), we ensure WCAG 2.0 Level AA compliance:
+
+- **Contrast Ratio Requirements:**
+  - Normal text: minimum 4.5:1
+  - Large text (18px+ or 14px+ bold): minimum 3:1
+  - UI components: minimum 3:1
+
+- **Text Color Usage:**
+  - **White text** (`text-white`) on dark backgrounds: Berkeley Blue, Oski Gold, Tilden, Soybean, Wellman Tile
+  - **Dark text** on light backgrounds only
+  - Test with [WebAim Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
+All module colors (Oski Gold, Tilden, Soybean, Wellman Tile) require white text for proper accessibility.
 
 ### Additional Secondary Colors
 - **Founders Rock** (#4F758B) - Blue-gray accent
