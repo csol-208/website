@@ -11,9 +11,9 @@ The Material Kit SASS source has been updated to use Berkeley's official color p
 ### Secondary Palette (Module Colors)
 The four course modules use Berkeley's secondary palette for visual distinction:
 
-- **Stadium Blue** (#006298) - Module 1: The AI-Data Analyst
+- **Oski Gold** (#A57327) - Module 1: The AI-Data Analyst
 - **Tilden** (#005F61) - Module 2: The Climate Mapper  
-- **Ion** (#C4D600) - Module 3: The AI Researcher
+- **Stone Pine** (#584F29) - Module 3: The AI Researcher
 - **Wellman Tile** (#D9661F) - Module 4: The Capstone Studio (named after 311 Wellman Hall!)
 
 ### Additional Secondary Colors
@@ -26,9 +26,9 @@ The four course modules use Berkeley's secondary palette for visual distinction:
 - Updated `$primary` to Berkeley Blue (#003262)
 - Updated `$secondary` to California Gold (#FDB515)
 - Added module colors from Berkeley's secondary palette:
-  - `$stadium-blue` (#006298) for Module 1
+  - `$oski-gold` (#A57327) for Module 1
   - `$tilden` (#005F61) for Module 2
-  - `$ion` (#C4D600) for Module 3  
+  - `$stone-pine` (#584F29) for Module 3  
   - `$wellman-tile` (#D9661F) for Module 4
 - Added all Berkeley colors to `$colors` map
 - Added all Berkeley colors to `$theme-colors` map
@@ -38,9 +38,9 @@ The four course modules use Berkeley's secondary palette for visual distinction:
 The compiled CSS now includes Berkeley-branded classes:
 - **Primary palette**: `.bg-berkeley-blue`, `.text-berkeley-blue`, `.bg-california-gold`, `.text-california-gold`
 - **Module colors**: 
-  - `.bg-stadium-blue`, `.text-stadium-blue` (Module 1)
+  - `.bg-oski-gold`, `.text-oski-gold` (Module 1)
   - `.bg-tilden`, `.text-tilden` (Module 2)
-  - `.bg-ion`, `.text-ion` (Module 3)
+  - `.bg-stone-pine`, `.text-stone-pine` (Module 3)
   - `.bg-wellman-tile`, `.text-wellman-tile` (Module 4)
 - **Additional**: `.bg-founders-rock`, `.text-founders-rock`, `.bg-medalist`, `.text-medalist`
 - Standard theme colors: `.btn-primary` (Berkeley Blue), `.btn-secondary` (California Gold)
