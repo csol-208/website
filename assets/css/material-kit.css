@@ -21,9 +21,9 @@
   --bs-gray-dark: #262626;
   --bs-berkeley-blue: #003262;
   --bs-california-gold: #FDB515;
-  --bs-stadium-blue: #006298;
+  --bs-oski-gold: #A57327;
   --bs-tilden: #005F61;
-  --bs-ion: #C4D600;
+  --bs-stone-pine: #584F29;
   --bs-wellman-tile: #D9661F;
   --bs-founders-rock: #4F758B;
   --bs-medalist: #C4820E;
@@ -48,9 +48,9 @@
   --bs-dark-blue: #003262;
   --bs-berkeley-blue: #003262;
   --bs-california-gold: #FDB515;
-  --bs-stadium-blue: #006298;
+  --bs-oski-gold: #A57327;
   --bs-tilden: #005F61;
-  --bs-ion: #C4D600;
+  --bs-stone-pine: #584F29;
   --bs-wellman-tile: #D9661F;
   --bs-founders-rock: #4F758B;
   --bs-medalist: #C4820E;
@@ -66,9 +66,9 @@
   --bs-dark-blue-rgb: 0, 50, 98;
   --bs-berkeley-blue-rgb: 0, 50, 98;
   --bs-california-gold-rgb: 253, 181, 21;
-  --bs-stadium-blue-rgb: 0, 98, 152;
+  --bs-oski-gold-rgb: 165, 115, 39;
   --bs-tilden-rgb: 0, 95, 97;
-  --bs-ion-rgb: 196, 214, 0;
+  --bs-stone-pine-rgb: 88, 79, 41;
   --bs-wellman-tile-rgb: 217, 102, 31;
   --bs-founders-rock-rgb: 79, 117, 139;
   --bs-medalist-rgb: 196, 130, 14;
@@ -3575,21 +3575,21 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #FDB515;
 }
 
-.btn-stadium-blue {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #006298;
-  --bs-btn-border-color: #006298;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(0, 83.3, 129.2);
-  --bs-btn-hover-border-color: rgb(0, 78.4, 121.6);
-  --bs-btn-focus-shadow-rgb: 38, 122, 167;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(0, 78.4, 121.6);
-  --bs-btn-active-border-color: rgb(0, 73.5, 114);
+.btn-oski-gold {
+  --bs-btn-color: #0a0a0a;
+  --bs-btn-bg: #A57327;
+  --bs-btn-border-color: #A57327;
+  --bs-btn-hover-color: #0a0a0a;
+  --bs-btn-hover-bg: rgb(178.5, 136, 71.4);
+  --bs-btn-hover-border-color: rgb(174, 129, 60.6);
+  --bs-btn-focus-shadow-rgb: 142, 99, 35;
+  --bs-btn-active-color: #0a0a0a;
+  --bs-btn-active-bg: rgb(183, 143, 82.2);
+  --bs-btn-active-border-color: rgb(174, 129, 60.6);
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #006298;
-  --bs-btn-disabled-border-color: #006298;
+  --bs-btn-disabled-color: #0a0a0a;
+  --bs-btn-disabled-bg: #A57327;
+  --bs-btn-disabled-border-color: #A57327;
 }
 
 .btn-tilden {
@@ -3609,21 +3609,21 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #005F61;
 }
 
-.btn-ion {
-  --bs-btn-color: #0a0a0a;
-  --bs-btn-bg: #C4D600;
-  --bs-btn-border-color: #C4D600;
-  --bs-btn-hover-color: #0a0a0a;
-  --bs-btn-hover-bg: rgb(204.85, 220.15, 38.25);
-  --bs-btn-hover-border-color: rgb(201.9, 218.1, 25.5);
-  --bs-btn-focus-shadow-rgb: 168, 183, 2;
-  --bs-btn-active-color: #0a0a0a;
-  --bs-btn-active-bg: rgb(207.8, 222.2, 51);
-  --bs-btn-active-border-color: rgb(201.9, 218.1, 25.5);
+.btn-stone-pine {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #584F29;
+  --bs-btn-border-color: #584F29;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(74.8, 67.15, 34.85);
+  --bs-btn-hover-border-color: rgb(70.4, 63.2, 32.8);
+  --bs-btn-focus-shadow-rgb: 113, 105, 73;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(70.4, 63.2, 32.8);
+  --bs-btn-active-border-color: rgb(66, 59.25, 30.75);
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #0a0a0a;
-  --bs-btn-disabled-bg: #C4D600;
-  --bs-btn-disabled-border-color: #C4D600;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #584F29;
+  --bs-btn-disabled-border-color: #584F29;
 }
 
 .btn-wellman-tile {
@@ -3881,20 +3881,20 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-stadium-blue {
-  --bs-btn-color: #006298;
-  --bs-btn-border-color: #006298;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #006298;
-  --bs-btn-hover-border-color: #006298;
-  --bs-btn-focus-shadow-rgb: 0, 98, 152;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #006298;
-  --bs-btn-active-border-color: #006298;
+.btn-outline-oski-gold {
+  --bs-btn-color: #A57327;
+  --bs-btn-border-color: #A57327;
+  --bs-btn-hover-color: #0a0a0a;
+  --bs-btn-hover-bg: #A57327;
+  --bs-btn-hover-border-color: #A57327;
+  --bs-btn-focus-shadow-rgb: 165, 115, 39;
+  --bs-btn-active-color: #0a0a0a;
+  --bs-btn-active-bg: #A57327;
+  --bs-btn-active-border-color: #A57327;
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #006298;
+  --bs-btn-disabled-color: #A57327;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #006298;
+  --bs-btn-disabled-border-color: #A57327;
   --bs-gradient: none;
 }
 
@@ -3915,20 +3915,20 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-ion {
-  --bs-btn-color: #C4D600;
-  --bs-btn-border-color: #C4D600;
-  --bs-btn-hover-color: #0a0a0a;
-  --bs-btn-hover-bg: #C4D600;
-  --bs-btn-hover-border-color: #C4D600;
-  --bs-btn-focus-shadow-rgb: 196, 214, 0;
-  --bs-btn-active-color: #0a0a0a;
-  --bs-btn-active-bg: #C4D600;
-  --bs-btn-active-border-color: #C4D600;
+.btn-outline-stone-pine {
+  --bs-btn-color: #584F29;
+  --bs-btn-border-color: #584F29;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #584F29;
+  --bs-btn-hover-border-color: #584F29;
+  --bs-btn-focus-shadow-rgb: 88, 79, 41;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #584F29;
+  --bs-btn-active-border-color: #584F29;
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #C4D600;
+  --bs-btn-disabled-color: #584F29;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #C4D600;
+  --bs-btn-disabled-border-color: #584F29;
   --bs-gradient: none;
 }
 
@@ -5635,11 +5635,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-california-gold-text-emphasis);
 }
 
-.alert-stadium-blue {
-  --bs-alert-color: var(--bs-stadium-blue-text-emphasis);
-  --bs-alert-bg: var(--bs-stadium-blue-bg-subtle);
-  --bs-alert-border-color: var(--bs-stadium-blue-border-subtle);
-  --bs-alert-link-color: var(--bs-stadium-blue-text-emphasis);
+.alert-oski-gold {
+  --bs-alert-color: var(--bs-oski-gold-text-emphasis);
+  --bs-alert-bg: var(--bs-oski-gold-bg-subtle);
+  --bs-alert-border-color: var(--bs-oski-gold-border-subtle);
+  --bs-alert-link-color: var(--bs-oski-gold-text-emphasis);
 }
 
 .alert-tilden {
@@ -5649,11 +5649,11 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-tilden-text-emphasis);
 }
 
-.alert-ion {
-  --bs-alert-color: var(--bs-ion-text-emphasis);
-  --bs-alert-bg: var(--bs-ion-bg-subtle);
-  --bs-alert-border-color: var(--bs-ion-border-subtle);
-  --bs-alert-link-color: var(--bs-ion-text-emphasis);
+.alert-stone-pine {
+  --bs-alert-color: var(--bs-stone-pine-text-emphasis);
+  --bs-alert-bg: var(--bs-stone-pine-bg-subtle);
+  --bs-alert-border-color: var(--bs-stone-pine-border-subtle);
+  --bs-alert-link-color: var(--bs-stone-pine-text-emphasis);
 }
 
 .alert-wellman-tile {
@@ -6133,17 +6133,17 @@ textarea.form-control-lg {
   --bs-list-group-active-border-color: var(--bs-california-gold-text-emphasis);
 }
 
-.list-group-item-stadium-blue {
-  --bs-list-group-color: var(--bs-stadium-blue-text-emphasis);
-  --bs-list-group-bg: var(--bs-stadium-blue-bg-subtle);
-  --bs-list-group-border-color: var(--bs-stadium-blue-border-subtle);
+.list-group-item-oski-gold {
+  --bs-list-group-color: var(--bs-oski-gold-text-emphasis);
+  --bs-list-group-bg: var(--bs-oski-gold-bg-subtle);
+  --bs-list-group-border-color: var(--bs-oski-gold-border-subtle);
   --bs-list-group-action-hover-color: var(--bs-emphasis-color);
-  --bs-list-group-action-hover-bg: var(--bs-stadium-blue-border-subtle);
+  --bs-list-group-action-hover-bg: var(--bs-oski-gold-border-subtle);
   --bs-list-group-action-active-color: var(--bs-emphasis-color);
-  --bs-list-group-action-active-bg: var(--bs-stadium-blue-border-subtle);
-  --bs-list-group-active-color: var(--bs-stadium-blue-bg-subtle);
-  --bs-list-group-active-bg: var(--bs-stadium-blue-text-emphasis);
-  --bs-list-group-active-border-color: var(--bs-stadium-blue-text-emphasis);
+  --bs-list-group-action-active-bg: var(--bs-oski-gold-border-subtle);
+  --bs-list-group-active-color: var(--bs-oski-gold-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-oski-gold-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-oski-gold-text-emphasis);
 }
 
 .list-group-item-tilden {
@@ -6159,17 +6159,17 @@ textarea.form-control-lg {
   --bs-list-group-active-border-color: var(--bs-tilden-text-emphasis);
 }
 
-.list-group-item-ion {
-  --bs-list-group-color: var(--bs-ion-text-emphasis);
-  --bs-list-group-bg: var(--bs-ion-bg-subtle);
-  --bs-list-group-border-color: var(--bs-ion-border-subtle);
+.list-group-item-stone-pine {
+  --bs-list-group-color: var(--bs-stone-pine-text-emphasis);
+  --bs-list-group-bg: var(--bs-stone-pine-bg-subtle);
+  --bs-list-group-border-color: var(--bs-stone-pine-border-subtle);
   --bs-list-group-action-hover-color: var(--bs-emphasis-color);
-  --bs-list-group-action-hover-bg: var(--bs-ion-border-subtle);
+  --bs-list-group-action-hover-bg: var(--bs-stone-pine-border-subtle);
   --bs-list-group-action-active-color: var(--bs-emphasis-color);
-  --bs-list-group-action-active-bg: var(--bs-ion-border-subtle);
-  --bs-list-group-active-color: var(--bs-ion-bg-subtle);
-  --bs-list-group-active-bg: var(--bs-ion-text-emphasis);
-  --bs-list-group-active-border-color: var(--bs-ion-text-emphasis);
+  --bs-list-group-action-active-bg: var(--bs-stone-pine-border-subtle);
+  --bs-list-group-active-color: var(--bs-stone-pine-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-stone-pine-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-stone-pine-text-emphasis);
 }
 
 .list-group-item-wellman-tile {
@@ -7751,9 +7751,9 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-california-gold-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-stadium-blue {
-  color: #fff !important;
-  background-color: RGBA(var(--bs-stadium-blue-rgb), var(--bs-bg-opacity, 1)) !important;
+.text-bg-oski-gold {
+  color: #0a0a0a !important;
+  background-color: RGBA(var(--bs-oski-gold-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-tilden {
@@ -7761,9 +7761,9 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-tilden-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-ion {
-  color: #0a0a0a !important;
-  background-color: RGBA(var(--bs-ion-rgb), var(--bs-bg-opacity, 1)) !important;
+.text-bg-stone-pine {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-stone-pine-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-wellman-tile {
@@ -7889,13 +7889,13 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(253, 196, 68, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-stadium-blue {
-  color: RGBA(var(--bs-stadium-blue-rgb), var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(var(--bs-stadium-blue-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-oski-gold {
+  color: RGBA(var(--bs-oski-gold-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-oski-gold-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-stadium-blue:hover, .link-stadium-blue:focus {
-  color: RGBA(0, 78, 122, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(0, 78, 122, var(--bs-link-underline-opacity, 1)) !important;
+.link-oski-gold:hover, .link-oski-gold:focus {
+  color: RGBA(183, 143, 82, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(183, 143, 82, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-tilden {
@@ -7907,13 +7907,13 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(0, 76, 78, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-ion {
-  color: RGBA(var(--bs-ion-rgb), var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(var(--bs-ion-rgb), var(--bs-link-underline-opacity, 1)) !important;
+.link-stone-pine {
+  color: RGBA(var(--bs-stone-pine-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-stone-pine-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-ion:hover, .link-ion:focus {
-  color: RGBA(208, 222, 51, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(208, 222, 51, var(--bs-link-underline-opacity, 1)) !important;
+.link-stone-pine:hover, .link-stone-pine:focus {
+  color: RGBA(70, 63, 33, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(70, 63, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-wellman-tile {
@@ -8414,16 +8414,16 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-california-gold-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-stadium-blue {
-  --bs-focus-ring-color: rgba(var(--bs-stadium-blue-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-oski-gold {
+  --bs-focus-ring-color: rgba(var(--bs-oski-gold-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-tilden {
   --bs-focus-ring-color: rgba(var(--bs-tilden-rgb), var(--bs-focus-ring-opacity));
 }
 
-.focus-ring-ion {
-  --bs-focus-ring-color: rgba(var(--bs-ion-rgb), var(--bs-focus-ring-opacity));
+.focus-ring-stone-pine {
+  --bs-focus-ring-color: rgba(var(--bs-stone-pine-rgb), var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-wellman-tile {
@@ -8766,16 +8766,16 @@ textarea.form-control-lg {
   border-color: #FDB515 !important;
 }
 
-.border-stadium-blue {
-  border-color: #006298 !important;
+.border-oski-gold {
+  border-color: #A57327 !important;
 }
 
 .border-tilden {
   border-color: #005F61 !important;
 }
 
-.border-ion {
-  border-color: #C4D600 !important;
+.border-stone-pine {
+  border-color: #584F29 !important;
 }
 
 .border-wellman-tile {
@@ -10747,16 +10747,16 @@ textarea.form-control-lg {
   color: #FDB515 !important;
 }
 
-.text-stadium-blue {
-  color: #006298 !important;
+.text-oski-gold {
+  color: #A57327 !important;
 }
 
 .text-tilden {
   color: #005F61 !important;
 }
 
-.text-ion {
-  color: #C4D600 !important;
+.text-stone-pine {
+  color: #584F29 !important;
 }
 
 .text-wellman-tile {
@@ -10967,9 +10967,9 @@ textarea.form-control-lg {
   text-decoration-color: rgba(var(--bs-california-gold-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-stadium-blue {
+.link-underline-oski-gold {
   --bs-link-underline-opacity: 1;
-  text-decoration-color: rgba(var(--bs-stadium-blue-rgb), var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgba(var(--bs-oski-gold-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-tilden {
@@ -10977,9 +10977,9 @@ textarea.form-control-lg {
   text-decoration-color: rgba(var(--bs-tilden-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
-.link-underline-ion {
+.link-underline-stone-pine {
   --bs-link-underline-opacity: 1;
-  text-decoration-color: rgba(var(--bs-ion-rgb), var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgba(var(--bs-stone-pine-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-wellman-tile {
@@ -11098,16 +11098,16 @@ textarea.form-control-lg {
   background-color: #FDB515 !important;
 }
 
-.bg-stadium-blue {
-  background-color: #006298 !important;
+.bg-oski-gold {
+  background-color: #A57327 !important;
 }
 
 .bg-tilden {
   background-color: #005F61 !important;
 }
 
-.bg-ion {
-  background-color: #C4D600 !important;
+.bg-stone-pine {
+  background-color: #584F29 !important;
 }
 
 .bg-wellman-tile {
@@ -19181,16 +19181,16 @@ textarea.form-control-lg {
   background: #FDB515;
 }
 
-.badge.bg-stadium-blue {
-  background: #006298;
+.badge.bg-oski-gold {
+  background: #A57327;
 }
 
 .badge.bg-tilden {
   background: #005F61;
 }
 
-.badge.bg-ion {
-  background: #C4D600;
+.badge.bg-stone-pine {
+  background: #584F29;
 }
 
 .badge.bg-wellman-tile {
@@ -19729,41 +19729,41 @@ textarea.form-control-lg {
   color: #FDB515;
 }
 
-.btn-stadium-blue,
-.btn.bg-gradient-stadium-blue {
-  box-shadow: 0 2px 2px 0 rgba(0, 98, 152, 0.1), 0 3px 1px -2px rgba(0, 98, 152, 0.18), 0 1px 5px 0 rgba(0, 98, 152, 0.15);
+.btn-oski-gold,
+.btn.bg-gradient-oski-gold {
+  box-shadow: 0 2px 2px 0 rgba(165, 115, 39, 0.1), 0 3px 1px -2px rgba(165, 115, 39, 0.18), 0 1px 5px 0 rgba(165, 115, 39, 0.15);
 }
-.btn-stadium-blue:hover,
-.btn.bg-gradient-stadium-blue:hover {
-  background-color: #006298;
-  border-color: #006298;
-  box-shadow: 0 8px 14px -8px rgba(0, 98, 152, 0.3), 0 3px 18px 0 rgba(0, 98, 152, 0.1), 0 7px 8px -4px rgba(0, 98, 152, 0.18);
+.btn-oski-gold:hover,
+.btn.bg-gradient-oski-gold:hover {
+  background-color: #A57327;
+  border-color: #A57327;
+  box-shadow: 0 8px 14px -8px rgba(165, 115, 39, 0.3), 0 3px 18px 0 rgba(165, 115, 39, 0.1), 0 7px 8px -4px rgba(165, 115, 39, 0.18);
 }
-.btn-stadium-blue .btn.bg-outline-stadium-blue,
-.btn.bg-gradient-stadium-blue .btn.bg-outline-stadium-blue {
-  border: 1px solid #006298;
+.btn-oski-gold .btn.bg-outline-oski-gold,
+.btn.bg-gradient-oski-gold .btn.bg-outline-oski-gold {
+  border: 1px solid #A57327;
 }
-.btn-stadium-blue:not(:disabled):not(.disabled).active, .btn-stadium-blue:not(:disabled):not(.disabled):active, .show > .btn-stadium-blue.dropdown-toggle,
-.btn.bg-gradient-stadium-blue:not(:disabled):not(.disabled).active,
-.btn.bg-gradient-stadium-blue:not(:disabled):not(.disabled):active,
-.show > .btn.bg-gradient-stadium-blue.dropdown-toggle {
-  color: color-yiq(#006298);
-  background-color: #006298;
+.btn-oski-gold:not(:disabled):not(.disabled).active, .btn-oski-gold:not(:disabled):not(.disabled):active, .show > .btn-oski-gold.dropdown-toggle,
+.btn.bg-gradient-oski-gold:not(:disabled):not(.disabled).active,
+.btn.bg-gradient-oski-gold:not(:disabled):not(.disabled):active,
+.show > .btn.bg-gradient-oski-gold.dropdown-toggle {
+  color: color-yiq(#A57327);
+  background-color: #A57327;
 }
-.btn-stadium-blue.focus, .btn-stadium-blue:focus,
-.btn.bg-gradient-stadium-blue.focus,
-.btn.bg-gradient-stadium-blue:focus {
+.btn-oski-gold.focus, .btn-oski-gold:focus,
+.btn.bg-gradient-oski-gold.focus,
+.btn.bg-gradient-oski-gold:focus {
   color: #fff;
 }
 
-.btn-outline-stadium-blue {
+.btn-outline-oski-gold {
   box-shadow: none;
 }
-.btn-outline-stadium-blue:hover:not(.active) {
+.btn-outline-oski-gold:hover:not(.active) {
   background-color: transparent;
   opacity: 0.75;
   box-shadow: none;
-  color: #006298;
+  color: #A57327;
 }
 
 .btn-tilden,
@@ -19803,41 +19803,41 @@ textarea.form-control-lg {
   color: #005F61;
 }
 
-.btn-ion,
-.btn.bg-gradient-ion {
-  box-shadow: 0 2px 2px 0 rgba(196, 214, 0, 0.1), 0 3px 1px -2px rgba(196, 214, 0, 0.18), 0 1px 5px 0 rgba(196, 214, 0, 0.15);
+.btn-stone-pine,
+.btn.bg-gradient-stone-pine {
+  box-shadow: 0 2px 2px 0 rgba(88, 79, 41, 0.1), 0 3px 1px -2px rgba(88, 79, 41, 0.18), 0 1px 5px 0 rgba(88, 79, 41, 0.15);
 }
-.btn-ion:hover,
-.btn.bg-gradient-ion:hover {
-  background-color: #C4D600;
-  border-color: #C4D600;
-  box-shadow: 0 8px 14px -8px rgba(196, 214, 0, 0.3), 0 3px 18px 0 rgba(196, 214, 0, 0.1), 0 7px 8px -4px rgba(196, 214, 0, 0.18);
+.btn-stone-pine:hover,
+.btn.bg-gradient-stone-pine:hover {
+  background-color: #584F29;
+  border-color: #584F29;
+  box-shadow: 0 8px 14px -8px rgba(88, 79, 41, 0.3), 0 3px 18px 0 rgba(88, 79, 41, 0.1), 0 7px 8px -4px rgba(88, 79, 41, 0.18);
 }
-.btn-ion .btn.bg-outline-ion,
-.btn.bg-gradient-ion .btn.bg-outline-ion {
-  border: 1px solid #C4D600;
+.btn-stone-pine .btn.bg-outline-stone-pine,
+.btn.bg-gradient-stone-pine .btn.bg-outline-stone-pine {
+  border: 1px solid #584F29;
 }
-.btn-ion:not(:disabled):not(.disabled).active, .btn-ion:not(:disabled):not(.disabled):active, .show > .btn-ion.dropdown-toggle,
-.btn.bg-gradient-ion:not(:disabled):not(.disabled).active,
-.btn.bg-gradient-ion:not(:disabled):not(.disabled):active,
-.show > .btn.bg-gradient-ion.dropdown-toggle {
-  color: color-yiq(#C4D600);
-  background-color: #C4D600;
+.btn-stone-pine:not(:disabled):not(.disabled).active, .btn-stone-pine:not(:disabled):not(.disabled):active, .show > .btn-stone-pine.dropdown-toggle,
+.btn.bg-gradient-stone-pine:not(:disabled):not(.disabled).active,
+.btn.bg-gradient-stone-pine:not(:disabled):not(.disabled):active,
+.show > .btn.bg-gradient-stone-pine.dropdown-toggle {
+  color: color-yiq(#584F29);
+  background-color: #584F29;
 }
-.btn-ion.focus, .btn-ion:focus,
-.btn.bg-gradient-ion.focus,
-.btn.bg-gradient-ion:focus {
+.btn-stone-pine.focus, .btn-stone-pine:focus,
+.btn.bg-gradient-stone-pine.focus,
+.btn.bg-gradient-stone-pine:focus {
   color: #fff;
 }
 
-.btn-outline-ion {
+.btn-outline-stone-pine {
   box-shadow: none;
 }
-.btn-outline-ion:hover:not(.active) {
+.btn-outline-stone-pine:hover:not(.active) {
   background-color: transparent;
   opacity: 0.75;
   box-shadow: none;
-  color: #C4D600;
+  color: #584F29;
 }
 
 .btn-wellman-tile,
@@ -21407,16 +21407,16 @@ label,
   background-image: radial-gradient(370px circle at 80% 50%, rgba(253, 181, 21, 0.6) 0, rgb(221.1101694915, 153.0762711864, 1.8898305085) 100%);
 }
 
-.bg-gradient-faded-stadium-blue {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(0, 98, 152, 0.6) 0, rgb(0, 65.1184210526, 101) 100%);
+.bg-gradient-faded-oski-gold {
+  background-image: radial-gradient(370px circle at 80% 50%, rgba(165, 115, 39, 0.6) 0, rgb(123.75, 86.25, 29.25) 100%);
 }
 
 .bg-gradient-faded-tilden {
   background-image: radial-gradient(370px circle at 80% 50%, rgba(0, 95, 97, 0.6) 0, rgb(0, 45.0515463918, 46) 100%);
 }
 
-.bg-gradient-faded-ion {
-  background-image: radial-gradient(370px circle at 80% 50%, rgba(196, 214, 0, 0.6) 0, rgb(149.2897196262, 163, 0) 100%);
+.bg-gradient-faded-stone-pine {
+  background-image: radial-gradient(370px circle at 80% 50%, rgba(88, 79, 41, 0.6) 0, rgb(53.2093023256, 47.7674418605, 24.7906976744) 100%);
 }
 
 .bg-gradient-faded-wellman-tile {
@@ -21479,16 +21479,16 @@ label,
   background-image: radial-gradient(200px circle at 50% 70%, rgba(253, 181, 21, 0.3) 0, #FDB515 100%);
 }
 
-.bg-gradient-faded-stadium-blue-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(0, 98, 152, 0.3) 0, #006298 100%);
+.bg-gradient-faded-oski-gold-vertical {
+  background-image: radial-gradient(200px circle at 50% 70%, rgba(165, 115, 39, 0.3) 0, #A57327 100%);
 }
 
 .bg-gradient-faded-tilden-vertical {
   background-image: radial-gradient(200px circle at 50% 70%, rgba(0, 95, 97, 0.3) 0, #005F61 100%);
 }
 
-.bg-gradient-faded-ion-vertical {
-  background-image: radial-gradient(200px circle at 50% 70%, rgba(196, 214, 0, 0.3) 0, #C4D600 100%);
+.bg-gradient-faded-stone-pine-vertical {
+  background-image: radial-gradient(200px circle at 50% 70%, rgba(88, 79, 41, 0.3) 0, #584F29 100%);
 }
 
 .bg-gradient-faded-wellman-tile-vertical {
@@ -22843,14 +22843,14 @@ hr.horizontal.gray-light {
 .sidenav[data-color=california-gold] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=california-gold] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active + .collapse .nav-item .nav-link.active {
   background-image: linear-gradient(195deg, #FDB515 0%, #FDB515 100%);
 }
-.sidenav[data-color=stadium-blue] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item.active .nav-link.active, .sidenav[data-color=stadium-blue] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item.active .nav-link.active {
-  background-image: linear-gradient(195deg, #006298 0%, #006298 100%);
+.sidenav[data-color=oski-gold] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item.active .nav-link.active, .sidenav[data-color=oski-gold] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item.active .nav-link.active {
+  background-image: linear-gradient(195deg, #A57327 0%, #A57327 100%);
 }
-.sidenav[data-color=stadium-blue] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=stadium-blue] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active {
+.sidenav[data-color=oski-gold] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=oski-gold] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active {
   background-color: rgba(199, 199, 199, 0.2);
 }
-.sidenav[data-color=stadium-blue] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=stadium-blue] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active + .collapse .nav-item .nav-link.active {
-  background-image: linear-gradient(195deg, #006298 0%, #006298 100%);
+.sidenav[data-color=oski-gold] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=oski-gold] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active + .collapse .nav-item .nav-link.active {
+  background-image: linear-gradient(195deg, #A57327 0%, #A57327 100%);
 }
 .sidenav[data-color=tilden] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item.active .nav-link.active, .sidenav[data-color=tilden] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item.active .nav-link.active {
   background-image: linear-gradient(195deg, #005F61 0%, #005F61 100%);
@@ -22861,14 +22861,14 @@ hr.horizontal.gray-light {
 .sidenav[data-color=tilden] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=tilden] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active + .collapse .nav-item .nav-link.active {
   background-image: linear-gradient(195deg, #005F61 0%, #005F61 100%);
 }
-.sidenav[data-color=ion] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item.active .nav-link.active, .sidenav[data-color=ion] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item.active .nav-link.active {
-  background-image: linear-gradient(195deg, #C4D600 0%, #C4D600 100%);
+.sidenav[data-color=stone-pine] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item.active .nav-link.active, .sidenav[data-color=stone-pine] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item.active .nav-link.active {
+  background-image: linear-gradient(195deg, #584F29 0%, #584F29 100%);
 }
-.sidenav[data-color=ion] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=ion] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active {
+.sidenav[data-color=stone-pine] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=stone-pine] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active {
   background-color: rgba(199, 199, 199, 0.2);
 }
-.sidenav[data-color=ion] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=ion] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active + .collapse .nav-item .nav-link.active {
-  background-image: linear-gradient(195deg, #C4D600 0%, #C4D600 100%);
+.sidenav[data-color=stone-pine] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item .nav-link.active + .collapse .nav-item .nav-link.active, .sidenav[data-color=stone-pine] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item .nav-link.active + .collapse .nav-item .nav-link.active {
+  background-image: linear-gradient(195deg, #584F29 0%, #584F29 100%);
 }
 .sidenav[data-color=wellman-tile] .navbar-nav > .nav-item .nav-link.active + .collapse .nav-item.active .nav-link.active, .sidenav[data-color=wellman-tile] .navbar-nav > .nav-item .nav-link.active + .collapsing .nav-item.active .nav-link.active {
   background-image: linear-gradient(195deg, #D9661F 0%, #D9661F 100%);
