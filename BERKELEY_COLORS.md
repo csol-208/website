@@ -1,33 +1,49 @@
 # Berkeley Color Scheme Integration
 
-The Material Kit SASS source has been updated to use Berkeley's official color palette:
+The Material Kit SASS source has been updated to use Berkeley's official color palette from the primary and secondary palettes.
 
 ## Berkeley Colors
-- **Berkeley Blue** (#003262) - Primary color
-- **California Gold** (#FDB515) - Secondary color  
-- **Founders Rock** (#3B7EA1) - Info color
-- **Medalist** (#C4820E) - Warning color
+
+### Primary Palette (Brand Foundation)
+- **Berkeley Blue** (#003262) - Primary brand color
+- **California Gold** (#FDB515) - Secondary brand color
+
+### Secondary Palette (Module Colors)
+The four course modules use Berkeley's secondary palette for visual distinction:
+
+- **Stadium Blue** (#006298) - Module 1: The AI-Data Analyst
+- **Tilden** (#005F61) - Module 2: The Climate Mapper  
+- **Ion** (#C4D600) - Module 3: The AI Researcher
+- **Wellman Tile** (#D9661F) - Module 4: The Capstone Studio (named after 311 Wellman Hall!)
+
+### Additional Secondary Colors
+- **Founders Rock** (#4F758B) - Blue-gray accent
+- **Medalist** (#C4820E) - Bronze-gold accent
 
 ## What Changed
 
 ### SASS Variables (`assets/scss/material-kit/_variables.scss`)
-- Updated `$primary` to Berkeley Blue
-- Updated `$secondary` to California Gold
-- Updated `$info` to Founders Rock
-- Updated `$warning` to Medalist
-- Added Berkeley colors to `$colors` map
-- Added Berkeley colors to `$theme-colors` map
+- Updated `$primary` to Berkeley Blue (#003262)
+- Updated `$secondary` to California Gold (#FDB515)
+- Added module colors from Berkeley's secondary palette:
+  - `$stadium-blue` (#006298) for Module 1
+  - `$tilden` (#005F61) for Module 2
+  - `$ion` (#C4D600) for Module 3  
+  - `$wellman-tile` (#D9661F) for Module 4
+- Added all Berkeley colors to `$colors` map
+- Added all Berkeley colors to `$theme-colors` map
 - Updated gradient colors to use Berkeley color variations
 
 ### Available CSS Classes
 The compiled CSS now includes Berkeley-branded classes:
-- `.bg-berkeley-blue`, `.text-berkeley-blue`
-- `.bg-california-gold`, `.text-california-gold`
-- `.bg-founders-rock`, `.text-founders-rock`
-- `.bg-medalist`, `.text-medalist`
-- `.btn-primary` (now Berkeley Blue)
-- `.btn-secondary` (now California Gold)
-- `.btn-info` (now Founders Rock)
+- **Primary palette**: `.bg-berkeley-blue`, `.text-berkeley-blue`, `.bg-california-gold`, `.text-california-gold`
+- **Module colors**: 
+  - `.bg-stadium-blue`, `.text-stadium-blue` (Module 1)
+  - `.bg-tilden`, `.text-tilden` (Module 2)
+  - `.bg-ion`, `.text-ion` (Module 3)
+  - `.bg-wellman-tile`, `.text-wellman-tile` (Module 4)
+- **Additional**: `.bg-founders-rock`, `.text-founders-rock`, `.bg-medalist`, `.text-medalist`
+- Standard theme colors: `.btn-primary` (Berkeley Blue), `.btn-secondary` (California Gold)
 
 ### Build Process
 To recompile the SASS after making changes:
