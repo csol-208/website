@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "This repository contains the course website for **AI-Augmented Data Science for Climate Leadership** at UC Berkeley.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass assets/scss/material-kit.scss assets/css/material-kit.css",
+    "watch:css": "sass --watch assets/scss/material-kit.scss assets/css/material-kit.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csol-208/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csol-208/website/issues"
+  },
+  "homepage": "https://github.com/csol-208/website#readme",
+  "devDependencies": {
+    "sass": "^1.97.1"
+  }
+}
