@@ -1,8 +1,5 @@
-.Rproj.user
+node_modules/
+_site/
+*.log
+*.tmp
 .DS_Store
-.Rhistory
-*.zip
-*.xlsx
-blogdown
-.ipynb_checkpoints
-/.quarto/

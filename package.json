@@ -6,6 +6,10 @@
   "scripts": {
     "build:css": "sass assets/scss/material-kit.scss assets/css/material-kit.css",
     "watch:css": "sass --watch assets/scss/material-kit.scss assets/css/material-kit.css",
+    "build:html": "eleventy",
+    "serve": "eleventy --serve",
+    "build": "npm run build:css && npm run build:html",
+    "start": "npm run build && npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +24,7 @@
   },
   "homepage": "https://github.com/csol-208/website#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "sass": "^1.97.1"
   }
 }

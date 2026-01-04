@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    {% include "head.html" %}
+</head>
+
+<body class="{% if bodyClass %}{{ bodyClass }}{% else %}index-page bg-gray-200{% endif %}">
+
+    {% include "navbar.html" %}
+
+    {{ content | safe }}
+
+    {% include "footer.html" %}
+
+    {% include "scripts.html" %}
+</body>
+
+</html>
