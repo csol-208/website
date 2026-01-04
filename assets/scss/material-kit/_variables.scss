@@ -23,29 +23,56 @@ $black: #0a0a0a !default;
 
 // fusv-enable
 
-// Berkeley Color Palette - Primary
+// ==============================================================
+// Berkeley Brand Color Palette (Complete)
+// Source: https://identity.berkeley.edu/visual-identity/color-palette/
+// ==============================================================
+
+// Primary Palette
 $berkeley-blue: #003262 !default;
 $california-gold: #FDB515 !default;
 
-// Berkeley Color Palette - Secondary (for modules)
-$oski-gold: #A57327 !default; // Module 1: Data Analyst
-$tilden: #005F61 !default; // Module 2: Spatial Analyst
-$stone-pine: #584F29 !default; // Module 3: Text Analyst
-$wellman-tile: #D9661F !default; // Module 4: Final Project
+// Secondary Palette
 $founders-rock: #4F758B !default;
 $medalist: #C4820E !default;
+$ion: #C4D600 !default;
+$soybean: #D7D182 !default;
+$south-hall: #6C3302 !default;
+$bay-fog: #DDD5C7 !default;
+$lawrence: #00B0DA !default;
+$lap-lane: #00A598 !default;
+$sather-gate: #B9D3B6 !default;
+$pacific: #46535E !default;
+$stone-pine: #584F29 !default;
+$grey: #888B8D !default;
+$web-grey: #EEEEEE !default;
 
-$blue: $founders-rock !default;
+// Tertiary Palette (Future Games)
+$rose-garden: #EE1F60 !default;
+$golden-gate: #ED4E33 !default;
+$south-gate: #FFB500 !default;
+$blue-and-gold: #00416C !default;
+
+// Extended Palette
+$wellman-tile: #D9661F !default;
+$oski-gold: #A57327 !default;
+$tilden: #005F61 !default;
+$stadium-blue: #006298 !default;
+
+// ==============================================================
+// Material Kit Default Color Mappings
+// ==============================================================
+$blue: $lawrence !default;
 $indigo: $berkeley-blue !default;
 $purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #F56565 !default;
+$pink: $rose-garden !default;
+$red: $golden-gate !default;
 $rose: #e91e63 !default;
-$orange: #fd7e14 !default;
+$orange: $south-gate !default;
 $yellow: $california-gold !default;
-$green: #81E6D9 !default;
-$teal: #20c997 !default;
-$cyan: #0dcaf0 !default;
+$green: $sather-gate !default;
+$teal: $lap-lane !default;
+$cyan: $bay-fog !default;
 
 
 $soft-background-color: #ffffff !default; // Testing
@@ -67,23 +94,45 @@ $colors: (
   "white": $white,
   "gray": $gray-600,
   "gray-dark": $gray-800,
+  // Berkeley Primary Palette
   "berkeley-blue": $berkeley-blue,
   "california-gold": $california-gold,
-  "oski-gold": $oski-gold,
-  "tilden": $tilden,
-  "stone-pine": $stone-pine,
-  "wellman-tile": $wellman-tile,
+  // Berkeley Secondary Palette
   "founders-rock": $founders-rock,
   "medalist": $medalist,
+  "ion": $ion,
+  "soybean": $soybean,
+  "south-hall": $south-hall,
+  "bay-fog": $bay-fog,
+  "lawrence": $lawrence,
+  "lap-lane": $lap-lane,
+  "sather-gate": $sather-gate,
+  "pacific": $pacific,
+  "stone-pine": $stone-pine,
+  "grey": $grey,
+  "web-grey": $web-grey,
+  // Berkeley Tertiary Palette
+  "rose-garden": $rose-garden,
+  "golden-gate": $golden-gate,
+  "south-gate": $south-gate,
+  "blue-and-gold": $blue-and-gold,
+  // Extended Palette (Module Colors)
+  "wellman-tile": $wellman-tile,
+  "oski-gold": $oski-gold,
+  "tilden": $tilden,
+  "stadium-blue": $stadium-blue,
   ) !default;
 // scss-docs-end colors-map
 
+// ==============================================================
+// Theme Color Mappings (Berkeley Brand → Bootstrap Themes)
+// ==============================================================
 $primary: $berkeley-blue !default;
 $secondary: $california-gold !default;
 $info: $founders-rock !default;
-$success: #4CAF50 !default;
+$success: $sather-gate !default;
 $warning: $medalist !default;
-$danger: #F44335 !default;
+$danger: $golden-gate !default;
 $light: $gray-200 !default;
 $dark: $gray-800 !default;
 $dark-blue: $berkeley-blue !default;
@@ -101,14 +150,33 @@ $theme-colors: (
   "dark": $dark,
   "white": $white,
   "dark-blue": $dark-blue,
+  // Berkeley Primary Palette
   "berkeley-blue": $berkeley-blue,
   "california-gold": $california-gold,
-  "oski-gold": $oski-gold,
-  "tilden": $tilden,
-  "stone-pine": $stone-pine,
-  "wellman-tile": $wellman-tile,
+  // Berkeley Secondary Palette
   "founders-rock": $founders-rock,
   "medalist": $medalist,
+  "ion": $ion,
+  "soybean": $soybean,
+  "south-hall": $south-hall,
+  "bay-fog": $bay-fog,
+  "lawrence": $lawrence,
+  "lap-lane": $lap-lane,
+  "sather-gate": $sather-gate,
+  "pacific": $pacific,
+  "stone-pine": $stone-pine,
+  "grey": $grey,
+  "web-grey": $web-grey,
+  // Berkeley Tertiary Palette
+  "rose-garden": $rose-garden,
+  "golden-gate": $golden-gate,
+  "south-gate": $south-gate,
+  "blue-and-gold": $blue-and-gold,
+  // Extended Palette (Module Colors)
+  "wellman-tile": $wellman-tile,
+  "oski-gold": $oski-gold,
+  "tilden": $tilden,
+  "stadium-blue": $stadium-blue,
   ) !default;
 // scss-docs-end theme-colors-map
 

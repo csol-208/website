@@ -1,6 +1,47 @@
 # Berkeley Color Scheme Integration
 
-The Material Kit SASS source has been updated to use Berkeley's official color palette from the primary and secondary palettes.
+This site uses Berkeley's complete official color palette from [identity.berkeley.edu](https://identity.berkeley.edu/visual-identity/color-palette/).
+
+## Implementation Architecture
+
+All Berkeley colors are defined in `assets/scss/material-kit/_variables.scss` and mapped to both:
+1. **Direct color classes** (e.g., `.bg-berkeley-blue`, `.text-soybean`)
+2. **Bootstrap theme mappings** (e.g., `$primary` → `$berkeley-blue`)
+
+This provides the full Berkeley palette while maintaining Bootstrap compatibility.
+
+## Available Berkeley Colors
+
+### Primary Palette
+- **Berkeley Blue** (#003262) → `$primary`, `.bg-berkeley-blue`
+- **California Gold** (#FDB515) → `$secondary`, `.bg-california-gold`
+
+### Secondary Palette
+- **Founders Rock** (#4F758B) → `$info`, `.bg-founders-rock`
+- **Medalist** (#C4820E) → `$warning`, `.bg-medalist`
+- **Ion** (#C4D600) → `.bg-ion`
+- **Soybean** (#D7D182) → `.bg-soybean`
+- **South Hall** (#6C3302) → `.bg-south-hall`
+- **Bay Fog** (#DDD5C7) → `.bg-bay-fog`
+- **Lawrence** (#00B0DA) → `.bg-lawrence`
+- **Lap Lane** (#00A598) → `.bg-lap-lane`
+- **Sather Gate** (#B9D3B6) → `$success`, `.bg-sather-gate`
+- **Pacific** (#46535E) → `.bg-pacific`
+- **Stone Pine** (#584F29) → `.bg-stone-pine`
+- **Grey** (#888B8D) → `.bg-grey`
+- **Web Grey** (#EEEEEE) → `.bg-web-grey`
+
+### Tertiary Palette (Future Games)
+- **Rose Garden** (#EE1F60) → `.bg-rose-garden`
+- **Golden Gate** (#ED4E33) → `$danger`, `.bg-golden-gate`
+- **South Gate** (#FFB500) → `.bg-south-gate`
+- **Blue and Gold** (#00416C) → `.bg-blue-and-gold`
+
+### Module Colors (Course-Specific)
+- **Oski Gold** (#A57327) - Module 1: The AI-Data Analyst
+- **Tilden** (#005F61) - Module 2: The Climate Mapper  
+- **Soybean** (#D7D182) - Module 3: The AI Researcher
+- **Wellman Tile** (#D9661F) - Module 4: The Capstone Studio
 
 ## Berkeley Colors
 
@@ -13,7 +54,7 @@ The four course modules use Berkeley's secondary palette for visual distinction:
 
 - **Oski Gold** (#A57327) - Module 1: The AI-Data Analyst
 - **Tilden** (#005F61) - Module 2: The Climate Mapper  
-- **Stone Pine** (#584F29) - Module 3: The AI Researcher
+- **Soybean** (#D7D182) - Module 3: The AI Researcher
 - **Wellman Tile** (#D9661F) - Module 4: The Capstone Studio (named after 311 Wellman Hall!)
 
 ### Additional Secondary Colors
@@ -28,7 +69,7 @@ The four course modules use Berkeley's secondary palette for visual distinction:
 - Added module colors from Berkeley's secondary palette:
   - `$oski-gold` (#A57327) for Module 1
   - `$tilden` (#005F61) for Module 2
-  - `$stone-pine` (#584F29) for Module 3  
+  - `$soybean` (#D7D182) for Module 3  
   - `$wellman-tile` (#D9661F) for Module 4
 - Added all Berkeley colors to `$colors` map
 - Added all Berkeley colors to `$theme-colors` map
@@ -40,7 +81,7 @@ The compiled CSS now includes Berkeley-branded classes:
 - **Module colors**: 
   - `.bg-oski-gold`, `.text-oski-gold` (Module 1)
   - `.bg-tilden`, `.text-tilden` (Module 2)
-  - `.bg-stone-pine`, `.text-stone-pine` (Module 3)
+  - `.bg-soybean`, `.text-soybean` (Module 3)
   - `.bg-wellman-tile`, `.text-wellman-tile` (Module 4)
 - **Additional**: `.bg-founders-rock`, `.text-founders-rock`, `.bg-medalist`, `.text-medalist`
 - Standard theme colors: `.btn-primary` (Berkeley Blue), `.btn-secondary` (California Gold)
