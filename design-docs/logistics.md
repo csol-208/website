@@ -2,7 +2,7 @@
 Course Title: CSOL-208: Data Science for Climate Solutions
 
 Instructor: Carl Boettiger, <cboettig@berkeley.edu>, https://carlboettiger.info
-Grad Student Instructor: Elena Stacy <estacy@berkeley.edu> 
+Grad Student Instructor: Elena Stacy <estacy@berkeley.edu>  https://sites.google.com/berkeley.edu/estacy 
 
 Room: 311 Wellman
 Times: M/W 12:10p - 1:50pm
