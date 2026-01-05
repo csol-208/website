@@ -129,8 +129,7 @@ permalink: /syllabus.html
                                     <p><strong>In-Class Lab:</strong> Exploring
                                         [Exiobase-3](https://source.coop/youssef-harby/exiobase-3) through cloud-native
                                         queries. Includes detailed data on economic transactions and environmental
-                                        pressures (e.g. emissions, energy use, land, water, materials) from 1995 to
-                                        2020,.</p>
+                                        pressures (e.g. emissions, energy use, land, water, materials).</p>
                                 </div>
                             </div>
                         </div>
@@ -145,27 +144,31 @@ permalink: /syllabus.html
                         <div class="card-header bg-tilden p-4">
                             <h3 class="text-white mb-0">
                                 <i class="material-symbols-rounded me-2">map</i>
-                                Module 2: The Climate Mapper
+                                Module 2: Spatial Data & Environmental Justice
                             </h3>
-                            <p class="text-white opacity-8 mb-0">Spatial Intelligence • Sessions 5-7</p>
+                            <p class="text-white opacity-8 mb-0">Mapping Data Center Impacts • Sessions 5-7</p>
                         </div>
                         <div class="card-body p-4">
-                            <p class="lead text-tilden font-weight-bold">Goal: Visualize physical risk
-                                and asset locations</p>
+                            <p class="lead text-tilden font-weight-bold">Goal: Map and analyze the environmental and
+                                ecological impacts of data center expansion through an environmental justice lens</p>
 
                             <!-- Session 5 -->
                             <div class="mt-4">
                                 <h5 class="text-tilden">
                                     <span class="badge badge-sm bg-tilden text-white me-2">Week 3</span>
-                                    Session 5: Introduction to Geospatial Data
+                                    Session 5: Mapping Data Center Locations
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Concept:</strong> Latitude, Longitude, and CRS (Coordinate Reference
-                                        Systems). Why plotting points isn't enough.</p>
+                                    <p><strong>Concept:</strong> Introduction to geospatial analysis. Understanding
+                                        Coordinate Reference Systems (CRS) and why they matter for accurate spatial
+                                        analysis. Building on DuckDB skills from Module 1 to work with spatial data.</p>
                                     <p><strong>Tech:</strong> DuckDB Spatial extension, Python anymap library
-                                        (maplibre wrapper)</p>
-                                    <p><strong>In-Class Lab:</strong> <em>Asset Mapper.</em> Map a list of 50
-                                        hypothetical factories. Color-code them by flood risk score.</p>
+                                        (maplibre wrapper), Point geometries</p>
+                                    <p><strong>In-Class Lab:</strong> <em>Data Center Atlas.</em> Load a dataset of data
+                                        center locations across the US. Use DuckDB Spatial to transform coordinates
+                                        between CRS systems and create an interactive MapLibre visualization showing the
+                                        distribution of data centers. Explore patterns in their geographic clustering.
+                                    </p>
                                 </div>
                             </div>
 
@@ -175,14 +178,21 @@ permalink: /syllabus.html
                             <div>
                                 <h5 class="text-tilden">
                                     <span class="badge badge-sm bg-tilden text-white me-2">Week 3</span>
-                                    Session 6: Remote Sensing and Satellite Data
+                                    Session 6: Environmental Justice & Vector Data
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Concept:</strong> Using satellite data for climate applications.</p>
-                                    <p><strong>Tech:</strong> Rasterio, NASA POWER API</p>
-                                    <p><strong>In-Class Lab:</strong> <em>Solar Potential Scout.</em> Give the AI
-                                        coordinates for a proposed solar farm. Ask it to fetch historical cloud
-                                        cover data from an API and calculate average peak sun hours.</p>
+                                    <p><strong>Concept:</strong> Spatial joins and overlay analysis. Using census and
+                                        demographic data to examine environmental justice dimensions of infrastructure
+                                        siting. Who lives near data centers and what communities bear the environmental
+                                        burden?</p>
+                                    <p><strong>Tech:</strong> DuckDB Spatial joins, Census vector data
+                                        (shapefiles/GeoJSON), demographic analysis</p>
+                                    <p><strong>In-Class Lab:</strong> <em>Data Center Environmental Justice Audit.</em>
+                                        Perform spatial joins between data center locations and census tract boundaries.
+                                        Analyze demographic characteristics (income, race, education) of communities
+                                        within buffer zones around data centers. Identify patterns of environmental
+                                        injustice in data center siting decisions and visualize findings on an
+                                        interactive map.</p>
                                 </div>
                             </div>
 
@@ -192,16 +202,21 @@ permalink: /syllabus.html
                             <div>
                                 <h5 class="text-tilden">
                                     <span class="badge badge-sm bg-tilden text-white me-2">Week 4</span>
-                                    Session 7: Spatial Joins & Risk Layers
+                                    Session 7: Biodiversity Impacts & Raster Analysis
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Concept:</strong> Overlapping data layers (e.g., which
-                                        assets are in a wildfire zone).</p>
-                                    <p><strong>Tech:</strong> DuckDB Spatial Joins, maplibre for visualization
-                                        (possibly deck.gl for 3D layers)</p>
-                                    <p><strong>In-Class Lab:</strong> <em>Supply Chain Vulnerability.</em> Overlay a
-                                        map of critical infrastructure (ports/rail) with climate hazard heatmaps
-                                        (sea level rise). Identify high-risk logistics hubs.</p>
+                                    <p><strong>Concept:</strong> Working with large-scale raster data for ecological
+                                        analysis. Understanding the biodiversity impacts of data center expansion on
+                                        local ecosystems. Extracting values from continuous spatial data layers.</p>
+                                    <p><strong>Tech:</strong> Rasterio, DuckDB Spatial with raster operations, species
+                                        richness datasets, cloud-optimized GeoTIFFs</p>
+                                    <p><strong>In-Class Lab:</strong> <em>Data Centers & Biodiversity Hotspots.</em>
+                                        Analyze the intersection of data center locations with biodiversity data layers
+                                        (e.g., species richness rasters from GBIF or Map of Life). Extract raster values
+                                        at data center locations to assess ecological sensitivity. Identify data centers
+                                        located in biodiversity hotspots and quantify potential habitat impacts. Create
+                                        visualizations showing the ecological footprint of digital infrastructure
+                                        expansion.</p>
                                 </div>
                             </div>
                         </div>
