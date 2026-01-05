@@ -212,7 +212,7 @@ permalink: /syllabus.html
                                         richness datasets, cloud-optimized GeoTIFFs</p>
                                     <p><strong>In-Class Lab:</strong> <em>Data Centers & Biodiversity Hotspots.</em>
                                         Analyze the intersection of data center locations with biodiversity data layers
-                                        (e.g., species richness rasters from GBIF or Map of Life). Extract raster values
+                                        (e.g., species richness rasters from NatureServe). Extract raster values
                                         at data center locations to assess ecological sensitivity. Identify data centers
                                         located in biodiversity hotspots and quantify potential habitat impacts. Create
                                         visualizations showing the ecological footprint of digital infrastructure
@@ -231,28 +231,33 @@ permalink: /syllabus.html
                         <div class="card-header bg-soybean p-4">
                             <h3 class="text-white mb-0">
                                 <i class="material-symbols-rounded me-2">description</i>
-                                Module 3: The AI Researcher
+                                Module 3: Working with LLMs & Unstructured Data
                             </h3>
-                            <p class="text-white opacity-8 mb-0">Unstructured Data & RAG • Sessions 8-10</p>
+                            <p class="text-white opacity-8 mb-0">LLM APIs & Document Intelligence • Sessions 8-10</p>
                         </div>
                         <div class="card-body p-4">
-                            <p class="lead text-soybean font-weight-bold">Goal: Parse thousands of
-                                pages of policy/ESG reports instantly</p>
+                            <p class="lead text-soybean font-weight-bold">Goal: Extract structured insights from
+                                unstructured corporate sustainability documents using modern LLM workflows</p>
 
                             <!-- Session 8 -->
                             <div class="mt-4">
                                 <h5 class="text-soybean">
                                     <span class="badge badge-sm bg-soybean text-white me-2">Week 4</span>
-                                    Session 8: RAG for Document Analysis
+                                    Session 8: Introduction to LLM APIs
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Concept:</strong> Retrieval Augmented Generation. How to make an LLM
-                                        answer questions based on your private documents, not the public internet.
+                                    <p><strong>Concept:</strong> Moving beyond IDE chat assistants to programmatic LLM
+                                        use. Understanding how to work with LLMs through APIs for reproducible,
+                                        automated workflows. Introduction to open-source models through OpenRouter.
                                     </p>
-                                    <p><strong>Tech:</strong> LangChain or LlamaIndex (Basic implementation)</p>
-                                    <p><strong>In-Class Lab:</strong> <em>The ESG Auditor.</em> Feed the AI a
-                                        100-page Sustainability Report. Build a script to extract: Net Zero Target
-                                        Year and Scope 1 Baseline.</p>
+                                    <p><strong>Tech:</strong> LangChain, OpenRouter (accessing open models like gpt-oss,
+                                        Olmo, nemotron), OpenAI structured outputs (JSON mode)</p>
+                                    <p><strong>In-Class Lab:</strong> <em>Your First LLM Pipeline.</em> Build a simple
+                                        Python script that uses LangChain to send prompts to different open-source
+                                        models via OpenRouter. Compare responses across models. Experiment with OpenAI's
+                                        structured output feature to extract specific fields (company name, emission
+                                        target, baseline year) from a sample text passage about corporate climate
+                                        commitments.</p>
                                 </div>
                             </div>
 
@@ -262,15 +267,24 @@ permalink: /syllabus.html
                             <div>
                                 <h5 class="text-soybean">
                                     <span class="badge badge-sm bg-soybean text-white me-2">Week 5</span>
-                                    Session 9: Web Scraping and Parsing
+                                    Session 9: Structured Data Extraction from PDFs
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Concept:</strong> Monitoring competitors and regulatory changes
-                                        automatically.</p>
-                                    <p><strong>Tech:</strong> Beautiful Soup (AI-generated scrapers)</p>
-                                    <p><strong>In-Class Lab:</strong> <em>Policy Watchdog.</em> Build a simple agent
-                                        that checks a specific government URL for new PDF uploads (e.g., EPA
-                                        updates) and alerts you if keywords like Methane appear.</p>
+                                    <p><strong>Concept:</strong> AI-era document parsing. Extracting structured
+                                        information from messy, unstructured corporate documents without traditional web
+                                        scraping tools. Understanding the types of sustainability and energy disclosures
+                                        that climate professionals encounter: CDP reports, GRI disclosures, corporate
+                                        sustainability reports, utility rate filings.</p>
+                                    <p><strong>Tech:</strong> LangChain document loaders, OpenAI structured outputs with
+                                        Pydantic schemas, PDF parsing libraries</p>
+                                    <p><strong>In-Class Lab:</strong> <em>Sustainability Report Parser.</em> Students
+                                        work with real public documents (e.g., Apple's Environmental Progress Report,
+                                        Microsoft Sustainability Report, or utility Integrated Resource Plans). Build a
+                                        pipeline that loads PDFs, chunks them intelligently, and uses LLMs with
+                                        structured output schemas to extract specific data fields: renewable energy
+                                        percentages, Scope 1/2/3 emissions, energy consumption metrics, water usage, and
+                                        waste diversion rates. Output results as clean JSON or CSV for further analysis.
+                                    </p>
                                 </div>
                             </div>
 
@@ -280,15 +294,22 @@ permalink: /syllabus.html
                             <div>
                                 <h5 class="text-soybean">
                                     <span class="badge badge-sm bg-soybean text-white me-2">Week 5</span>
-                                    Session 10: Sentiment Analysis & Social Listening
+                                    Session 10: Model Context Protocol & Advanced Document Analysis
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Concept:</strong> Understanding public perception of green
-                                        initiatives.</p>
-                                    <p><strong>Tech:</strong> OpenAI API / Sentiment libraries</p>
-                                    <p><strong>In-Class Lab:</strong> <em>Greenwashing Detector.</em> Analyze a set
-                                        of press releases vs. news articles. Score the "optimism gap" between what a
-                                        company says vs. what the news says.</p>
+                                    <p><strong>Concept:</strong> Introduction to Model Context Protocol (MCP) as a
+                                        modern approach to giving LLMs access to external data sources and tools.
+                                        Understanding how MCP servers provide structured interfaces for document
+                                        processing, database access, and other external capabilities without traditional
+                                        RAG embeddings.</p>
+                                    <p><strong>Tech:</strong> Model Context Protocol, MCP servers for PDF/document
+                                        processing, LangChain integration with MCP</p>
+                                    <p><strong>In-Class Lab:</strong> <em>Multi-Document ESG Analysis.</em> Use
+                                        MCP-based tools to analyze multiple sustainability documents simultaneously.
+                                        Build a workflow that compares climate commitments across several Fortune 500
+                                        companies, identifying gaps, inconsistencies, and best practices. Students
+                                        explore how MCP simplifies complex document workflows compared to traditional
+                                        embedding-based RAG approaches.</p>
                                 </div>
                             </div>
                         </div>
@@ -318,10 +339,12 @@ permalink: /syllabus.html
                                     Session 11: Project Scoping & Architecture
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Activity:</strong> Whiteboarding with AI. Students prompt the AI to
-                                        critique their project architecture.</p>
-                                    <p><strong>Focus:</strong> Feasibility check. Is the data available? Is the
-                                        scope realistic for 2 weeks?</p>
+                                    <p><strong>Activity:</strong> Collaborative design session. Teams define their
+                                        project goals, identify data sources, and sketch their technical approach using
+                                        AI as a design partner.</p>
+                                    <p><strong>Focus:</strong> Feasibility and impact. Does the project leverage
+                                        techniques from across the course? Will it provide actionable insights for
+                                        climate decision-makers?</p>
                                 </div>
                             </div>
 
@@ -334,10 +357,11 @@ permalink: /syllabus.html
                                     Session 12: In-class Development Sprint
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Activity:</strong> 2 hours of deep work. Instructors help unblock
-                                        logic issues.</p>
-                                    <p><strong>Focus:</strong> Connecting the backend (Data processing) to the
-                                        frontend (Streamlit dashboard).</p>
+                                    <p><strong>Activity:</strong> Focused development time. Instructors provide
+                                        technical guidance and help teams overcome implementation challenges.</p>
+                                    <p><strong>Focus:</strong> Building core functionality. Whether that's data
+                                        pipelines, spatial analysis workflows, document extraction systems, or
+                                        interactive visualizations—teams make substantial progress on their MVP.</p>
                                 </div>
                             </div>
 
@@ -347,13 +371,14 @@ permalink: /syllabus.html
                             <div>
                                 <h5 class="text-wellman-tile">
                                     <span class="badge badge-sm bg-wellman-tile text-white me-2">Week 7</span>
-                                    Session 13: Edge Cases & User Experience
+                                    Session 13: Refinement & User Experience
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Activity:</strong> Partner swap. Group A tests Group B's tool and
-                                        tries to break it.</p>
-                                    <p><strong>Focus:</strong> Error handling. What happens if the user uploads a
-                                        bad CSV? (AI creates the error messages).</p>
+                                    <p><strong>Activity:</strong> Peer testing and feedback. Teams experience each
+                                        other's projects and provide constructive feedback on usability and impact.</p>
+                                    <p><strong>Focus:</strong> User experience and communication. Is the tool intuitive?
+                                        Are insights clearly communicated? Does the project effectively tell its climate
+                                        story?</p>
                                 </div>
                             </div>
 
@@ -366,11 +391,10 @@ permalink: /syllabus.html
                                     Session 14: Demo Day
                                 </h5>
                                 <div class="ms-4">
-                                    <p><strong>Format:</strong> 5-minute demo per group.</p>
-                                    <p><strong>Requirement:</strong> Must demonstrate live code execution (no
-                                        slide-ware).</p>
-                                    <p><strong>Critique:</strong> Focus on Actionable Insight – did this tool
-                                        actually help a decision-maker?</p>
+                                    <p><strong>Format:</strong> Lightning presentations showcasing live projects.</p>
+                                    <p><strong>Evaluation:</strong> Does the project demonstrate technical
+                                        sophistication? Does it address a real climate challenge? Could it influence
+                                        decision-making in the real world?</p>
                                 </div>
                             </div>
                         </div>
