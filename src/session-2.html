@@ -1,0 +1,211 @@
+---
+layout: base.html
+title: "Session 2: Hello Climate"
+bodyClass: index-page bg-gray-200
+permalink: /session-2.html
+---
+
+</div>
+</div>
+</div>
+<!-- End Navbar -->
+
+<!-- Header -->
+<header class="header-2">
+    <div class="page-header min-vh-40 relative"
+        style="background-image: url('./images/windmills.jpg'); background-size: cover; background-position: center;">
+        <span class="mask bg-gradient-dark opacity-4"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 text-center mx-auto">
+                    <span class="badge bg-oski-gold mb-3">Week 1 • Module 1</span>
+                    <h1 class="text-white pt-3 mt-n5">Session 2: Hello Climate</h1>
+                    <p class="lead text-white mt-3">Your first AI-assisted data analysis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header -->
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <!-- Overview -->
+                <section class="pt-4 pb-3">
+                    <p class="lead text-center text-muted">
+                        Today you'll load real-world CO2 emissions data, explore it with AI assistance, and create your
+                        first climate data visualization.
+                    </p>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Prerequisites -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">Prerequisites</h3>
+                    <p>Make sure you have:</p>
+                    <ul>
+                        <li>VS Code with GitHub Copilot extension</li>
+                        <li>GitHub Student Developer Pack approved (or use Antigravity IDE as alternative)</li>
+                        <li>Your Module 1 repository cloned locally</li>
+                    </ul>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- The Dataset -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">The Data</h3>
+                    <p>We're using the <strong>Our World in Data CO2 and Greenhouse Gas Emissions</strong> dataset — one
+                        of the most comprehensive open datasets on global emissions.</p>
+
+                    <table class="table table-borderless mt-3">
+                        <tr>
+                            <td><strong>50,000+</strong> data points</td>
+                            <td><strong>254</strong> countries & regions</td>
+                            <td><strong>1750–2024</strong> years covered</td>
+                        </tr>
+                    </table>
+
+                    <p>Key columns we'll use:</p>
+                    <ul>
+                        <li><code>country</code>, <code>year</code> — identifiers</li>
+                        <li><code>co2</code> — total emissions (million tonnes)</li>
+                        <li><code>co2_per_capita</code> — emissions per person</li>
+                        <li><code>coal_co2</code>, <code>oil_co2</code>, <code>gas_co2</code> — by fuel type</li>
+                    </ul>
+                    <p><a href="https://github.com/owid/co2-data" target="_blank">View full documentation →</a></p>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Part 1 -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">Part 1: Environment Setup</h3>
+
+                    <p>Open a terminal in VS Code and ask your AI assistant:</p>
+                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
+                        "Create a Python virtual environment and install pandas and matplotlib"
+                    </blockquote>
+
+                    <p>You should get something like:</p>
+                    <pre class="bg-dark text-white p-3 rounded"><code>python3 -m venv .venv
+source .venv/bin/activate
+pip install pandas matplotlib</code></pre>
+
+                    <p class="mt-3">Then download the data:</p>
+                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
+                        "Download the CSV from https://owid-public.owid.io/data/co2/owid-co2-data.csv to a data folder"
+                    </blockquote>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Part 2 -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">Part 2: Load and Explore</h3>
+
+                    <p>Create a new file called <code>hello_climate.py</code> and ask your AI:</p>
+                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
+                        "Load the OWID CO2 data CSV and show me basic info: how many rows, columns, years, and
+                        countries"
+                    </blockquote>
+
+                    <p><strong>What to look for:</strong></p>
+                    <ul>
+                        <li>How big is this dataset? (rows × columns)</li>
+                        <li>What time period does it cover?</li>
+                        <li>What are the column names?</li>
+                    </ul>
+
+                    <p class="text-muted mt-3">💡 Try <code>df.info()</code>, <code>df.describe()</code>, and
+                        <code>df.head()</code> to explore any DataFrame.</p>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Part 3 -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">Part 3: Create a Trend Line</h3>
+
+                    <p>Ask your AI:</p>
+                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
+                        "Filter the data to just 'World' emissions from 1900 onwards, and create a line chart showing
+                        CO2 over time with labels"
+                    </blockquote>
+
+                    <p><strong>Why filter for 'World'?</strong> The dataset includes individual countries AND aggregated
+                        regions. 'World' gives us the global total.</p>
+
+                    <p><strong>Why start from 1900?</strong> Earlier data is sparse and incomplete.</p>
+
+                    <p>Save your chart:</p>
+                    <pre class="bg-dark text-white p-3 rounded"><code>plt.savefig('global_co2_trend.png')</code></pre>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Part 4 -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">Part 4: Go Further (If Time Permits)</h3>
+
+                    <p>Try these extensions:</p>
+                    <ul>
+                        <li><strong>Compare countries:</strong> "Plot CO2 for the US, China, and India on the same
+                            chart"</li>
+                        <li><strong>Per capita:</strong> "Compare CO2 per capita between the US and EU over time"</li>
+                        <li><strong>By fuel type:</strong> "Create a stacked area chart of coal, oil, and gas emissions"
+                        </li>
+                        <li><strong>Top emitters:</strong> "Bar chart of the top 10 emitters in 2022"</li>
+                    </ul>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Commit -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">What to Commit</h3>
+
+                    <p>Before leaving, push your work:</p>
+                    <pre class="bg-dark text-white p-3 rounded"><code>git add .
+git commit -m "Session 2: Hello Climate exercise"
+git push</code></pre>
+
+                    <p class="mt-3"><strong>Your repo should contain:</strong></p>
+                    <ul>
+                        <li><code>hello_climate.py</code> (or <code>.ipynb</code>)</li>
+                        <li><code>data/owid-co2-data.csv</code></li>
+                        <li><code>global_co2_trend.png</code></li>
+                    </ul>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Takeaways -->
+                <section class="py-4">
+                    <h3 class="text-berkeley-blue">Key Takeaways</h3>
+                    <ol>
+                        <li><strong>AI assistants accelerate exploration</strong> — You didn't need to memorize pandas
+                            syntax</li>
+                        <li><strong>Real data is messy</strong> — Notice all those missing values and aggregated regions
+                        </li>
+                        <li><strong>Climate data tells a story</strong> — The upward trend in CO2 is unmistakable</li>
+                    </ol>
+
+                    <div class="text-center mt-4">
+                        <a href="session-1.html" class="btn btn-outline-dark me-2">← Session 1</a>
+                        <a href="session-3.html" class="btn bg-oski-gold text-white">Continue to Session 3 →</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer pt-5 mt-5">
+    <div class="container">
