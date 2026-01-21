@@ -1,6 +1,6 @@
 ---
 layout: base.html
-title: "Session 2: Hello Climate"
+title: "Session 2: Working with AI Coding Agents"
 bodyClass: index-page bg-gray-200
 permalink: /session-2.html
 ---
@@ -19,8 +19,8 @@ permalink: /session-2.html
             <div class="row">
                 <div class="col-lg-7 text-center mx-auto">
                     <span class="badge bg-oski-gold mb-3">Week 1 • Module 1</span>
-                    <h1 class="text-white pt-3 mt-n5">Session 2: Hello Climate</h1>
-                    <p class="lead text-white mt-3">Your first AI-assisted data analysis</p>
+                    <h1 class="text-white pt-3 mt-n5">Session 2: Working with AI Coding Agents</h1>
+                    <p class="lead text-white mt-3">From small data to structured analysis with LLM assistance</p>
                 </div>
             </div>
         </div>
@@ -36,29 +36,66 @@ permalink: /session-2.html
                 <!-- Overview -->
                 <section class="pt-4 pb-3">
                     <p class="lead text-center text-muted">
-                        Today you'll load real-world CO2 emissions data, explore it with AI assistance, and create your
-                        first climate data visualization.
+                        This session explores how large language models function as coding agents within integrated
+                        development environments. You'll work with the OWID CO2 emissions dataset—a well-curated,
+                        accessible dataset ideal for learning AI-assisted data analysis workflows.
                     </p>
                 </section>
 
                 <hr class="horizontal dark my-4">
 
-                <!-- Prerequisites -->
+                <!-- Part 0: Repository Setup -->
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">Prerequisites</h3>
-                    <p>Make sure you have:</p>
-                    <ul>
-                        <li>VS Code with GitHub Copilot extension</li>
-                        <li>GitHub Student Developer Pack approved (or use Antigravity IDE as alternative)</li>
-                        <li>Your Module 1 repository cloned locally</li>
-                    </ul>
+                    <h3 class="text-berkeley-blue">Part 0: Repository Setup</h3>
+
+                    <h5 class="mt-4">Step 1: Accept the GitHub Classroom Assignment</h5>
+                    <p>Your instructor will email you a secure <strong>GitHub Classroom</strong> link for Module 1.
+                        Click the link to create your personal repository. GitHub Classroom automatically creates a
+                        private copy of the module template repository under your account.</p>
+                    <p class="text-muted"><em>New to GitHub Classroom?</em> See the
+                        <a href="https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/using-github-classroom-with-github-cli"
+                            target="_blank">GitHub Classroom documentation</a> for more details.
+                    </p>
+
+                    <h5 class="mt-4">Step 2: Clone to VS Code</h5>
+                    <p>Open VS Code and clone your new repository:</p>
+                    <ol>
+                        <li>Press <code>Ctrl+Shift+P</code> (or <code>Cmd+Shift+P</code> on Mac)</li>
+                        <li>Type <strong>"Git: Clone"</strong> and select it</li>
+                        <li>Paste your repository URL from GitHub</li>
+                        <li>Choose a local folder and open the cloned repository</li>
+                    </ol>
+                    <p>If prompted to sign in to GitHub, VS Code will open a browser for
+                        <strong>device authentication</strong>. Follow the prompts to authorize VS Code.
+                    </p>
+
+                    <h5 class="mt-4">Step 3: Set Up the Python Environment</h5>
+                    <p>Open Copilot Chat in VS Code and give it this instruction:</p>
+                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
+                        "Set up the python environment"
+                    </blockquote>
+                    <p>Your coding agent will follow the instructions in
+                        <code>.vscode/copilot-instructions.md</code> to create a Conda environment with
+                        the correct dependencies (ibis-framework, altair, pandas, jupyter).
+                    </p>
+
+                    <h5 class="mt-4">Step 4: Restart and Select Kernel</h5>
+                    <ol>
+                        <li>After environment setup completes, <strong>restart VS Code</strong> to ensure the
+                            new environment is detected</li>
+                        <li>Open the session notebook: <code>notebooks/session2.ipynb</code></li>
+                        <li>Click "Select Kernel" in the top-right of the notebook</li>
+                        <li>Choose <strong>Python Environments → csol208</strong> (the Conda environment you created)
+                        </li>
+                    </ol>
+                    <p>You're now ready to work through the session exercises with AI assistance.</p>
                 </section>
 
                 <hr class="horizontal dark my-4">
 
                 <!-- The Dataset -->
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">The Data</h3>
+                    <h3 class="text-berkeley-blue">The Data: OWID CO2 Dataset</h3>
                     <p>We're using the <strong>Our World in Data CO2 and Greenhouse Gas Emissions</strong> dataset — one
                         of the most comprehensive open datasets on global emissions.</p>
 
@@ -82,85 +119,42 @@ permalink: /session-2.html
 
                 <hr class="horizontal dark my-4">
 
-                <!-- Part 1 -->
+                <!-- What You'll Explore -->
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">Part 1: Environment Setup</h3>
+                    <h3 class="text-berkeley-blue">What You'll Explore</h3>
+                    <p>The session notebook guides you through progressively complex tasks:</p>
 
-                    <p>Open a terminal in VS Code and ask your AI assistant:</p>
-                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
-                        "Create a Python virtual environment and install pandas and matplotlib"
-                    </blockquote>
-
-                    <p>You should get something like:</p>
-                    <pre class="bg-dark text-white p-3 rounded"><code>python3 -m venv .venv
-source .venv/bin/activate
-pip install pandas matplotlib</code></pre>
-
-                    <p class="mt-3">Then download the data:</p>
-                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
-                        "Download the CSV from https://owid-public.owid.io/data/co2/owid-co2-data.csv to a data folder"
-                    </blockquote>
-                </section>
-
-                <hr class="horizontal dark my-4">
-
-                <!-- Part 2 -->
-                <section class="py-3">
-                    <h3 class="text-berkeley-blue">Part 2: Load and Explore</h3>
-
-                    <p>Create a new file called <code>hello_climate.py</code> and ask your AI:</p>
-                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
-                        "Load the OWID CO2 data CSV and show me basic info: how many rows, columns, years, and
-                        countries"
-                    </blockquote>
-
-                    <p><strong>What to look for:</strong></p>
                     <ul>
-                        <li>How big is this dataset? (rows × columns)</li>
-                        <li>What time period does it cover?</li>
-                        <li>What are the column names?</li>
-                    </ul>
-
-                    <p class="text-muted mt-3">💡 Try <code>df.info()</code>, <code>df.describe()</code>, and
-                        <code>df.head()</code> to explore any DataFrame.</p>
-                </section>
-
-                <hr class="horizontal dark my-4">
-
-                <!-- Part 3 -->
-                <section class="py-3">
-                    <h3 class="text-berkeley-blue">Part 3: Create a Trend Line</h3>
-
-                    <p>Ask your AI:</p>
-                    <blockquote class="border-start border-4 border-oski-gold ps-3 my-3 fst-italic text-muted">
-                        "Filter the data to just 'World' emissions from 1900 onwards, and create a line chart showing
-                        CO2 over time with labels"
-                    </blockquote>
-
-                    <p><strong>Why filter for 'World'?</strong> The dataset includes individual countries AND aggregated
-                        regions. 'World' gives us the global total.</p>
-
-                    <p><strong>Why start from 1900?</strong> Earlier data is sparse and incomplete.</p>
-
-                    <p>Save your chart:</p>
-                    <pre class="bg-dark text-white p-3 rounded"><code>plt.savefig('global_co2_trend.png')</code></pre>
-                </section>
-
-                <hr class="horizontal dark my-4">
-
-                <!-- Part 4 -->
-                <section class="py-3">
-                    <h3 class="text-berkeley-blue">Part 4: Go Further (If Time Permits)</h3>
-
-                    <p>Try these extensions:</p>
-                    <ul>
-                        <li><strong>Compare countries:</strong> "Plot CO2 for the US, China, and India on the same
-                            chart"</li>
-                        <li><strong>Per capita:</strong> "Compare CO2 per capita between the US and EU over time"</li>
-                        <li><strong>By fuel type:</strong> "Create a stacked area chart of coal, oil, and gas emissions"
+                        <li><strong>Loading and exploration:</strong> Data dimensions, temporal coverage, key variables
                         </li>
-                        <li><strong>Top emitters:</strong> "Bar chart of the top 10 emitters in 2022"</li>
+                        <li><strong>Filtering and ranking:</strong> Identifying top emitters, excluding aggregate
+                            regions</li>
+                        <li><strong>Time series visualization:</strong> Emissions trajectories for major countries</li>
+                        <li><strong>Compositional analysis:</strong> Emissions breakdown by fuel source</li>
+                        <li><strong>Groupby operations:</strong> Continental aggregations, percentage change
+                            calculations</li>
+                        <li><strong>Independent analysis:</strong> Choose your own analytical question</li>
                     </ul>
+
+                    <p>Throughout, you'll observe how coding agents handle these tasks autonomously versus
+                        where they need guidance—and reflect on the boundary between automated execution
+                        and human judgment.</p>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <!-- Learning Objectives -->
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">Learning Objectives</h3>
+                    <ol>
+                        <li><strong>Distinguish</strong> between chat-based LLM interfaces and coding agents with
+                            local execution capabilities</li>
+                        <li><strong>Develop fluency</strong> in specifying data operations through natural language</li>
+                        <li><strong>Evaluate</strong> the boundary between autonomous agent tasks and those requiring
+                            human guidance</li>
+                        <li><strong>Assess</strong> when programmatic approaches offer advantages over manual analysis
+                        </li>
+                    </ol>
                 </section>
 
                 <hr class="horizontal dark my-4">
@@ -171,14 +165,14 @@ pip install pandas matplotlib</code></pre>
 
                     <p>Before leaving, push your work:</p>
                     <pre class="bg-dark text-white p-3 rounded"><code>git add .
-git commit -m "Session 2: Hello Climate exercise"
+git commit -m "Session 2: AI coding agents exercise"
 git push</code></pre>
 
-                    <p class="mt-3"><strong>Your repo should contain:</strong></p>
+                    <p class="mt-3"><strong>Your completed notebook should include:</strong></p>
                     <ul>
-                        <li><code>hello_climate.py</code> (or <code>.ipynb</code>)</li>
-                        <li><code>data/owid-co2-data.csv</code></li>
-                        <li><code>global_co2_trend.png</code></li>
+                        <li>All code cells executed with output</li>
+                        <li>Completed reflection responses on agent performance</li>
+                        <li>Your independent analysis with supporting visualization</li>
                     </ul>
                 </section>
 
@@ -188,11 +182,12 @@ git push</code></pre>
                 <section class="py-4">
                     <h3 class="text-berkeley-blue">Key Takeaways</h3>
                     <ol>
-                        <li><strong>AI assistants accelerate exploration</strong> — You didn't need to memorize pandas
-                            syntax</li>
-                        <li><strong>Real data is messy</strong> — Notice all those missing values and aggregated regions
-                        </li>
-                        <li><strong>Climate data tells a story</strong> — The upward trend in CO2 is unmistakable</li>
+                        <li><strong>Execution context matters</strong> — The same LLM model behaves differently in
+                            a browser chat versus an IDE with code execution</li>
+                        <li><strong>Natural language drives analysis</strong> — You can specify complex data operations
+                            without memorizing syntax</li>
+                        <li><strong>Verification remains essential</strong> — AI accelerates exploration but doesn't
+                            eliminate the need for human judgment</li>
                     </ol>
 
                     <div class="text-center mt-4">
