@@ -49,7 +49,7 @@ permalink: /publishing.html
 
                 <!-- How URLs work -->
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">How GitHub Pages URLs Work</h3>
+                    <h2 class="text-berkeley-blue">How GitHub Pages URLs Work</h2>
                     <p>Once Pages is enabled, your site is served at:</p>
                     <pre class="bg-light p-3 rounded"><code>https://&lt;username&gt;.github.io/&lt;repo-name&gt;/</code></pre>
                     <p>Files are accessible by appending their path to that base URL:</p>
@@ -71,7 +71,7 @@ permalink: /publishing.html
 
                 <!-- Publishing a folder -->
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">Publishing Only Part of Your Repo</h3>
+                    <h2 class="text-berkeley-blue">Publishing Only Part of Your Repo</h2>
                     <p>You can designate any folder (e.g. <code>docs/</code> or <code>output/</code>) as the root of
                         your published site. Only the files in that folder become public — your notebooks, raw data,
                         and source code stay private.</p>
@@ -91,18 +91,18 @@ permalink: /publishing.html
                     <h2 class="text-berkeley-blue">Method 1: Manual Setup via GitHub Settings</h2>
                     <p>This approach uses the GitHub website — no terminal required.</p>
 
-                    <h5 class="mt-4">Step 1: Push your HTML file(s) to the repo</h5>
+                    <h3 class="mt-4">Step 1: Push your HTML file(s) to the repo</h3>
                     <p>Make sure your output file (e.g. <code>docs/index.html</code>) is committed and pushed to
                         GitHub.</p>
 
-                    <h5 class="mt-4">Step 2: Open repository Settings</h5>
+                    <h3 class="mt-4">Step 2: Open repository Settings</h3>
                     <ol>
                         <li>Go to your repository on GitHub</li>
                         <li>Click the <strong>Settings</strong> tab (top right of the repo page)</li>
                         <li>In the left sidebar, click <strong>Pages</strong></li>
                     </ol>
 
-                    <h5 class="mt-4">Step 3: Configure the source</h5>
+                    <h3 class="mt-4">Step 3: Configure the source</h3>
                     <ol>
                         <li>Under <strong>Build and deployment</strong>, set <strong>Source</strong> to
                             <strong>GitHub Actions</strong> (the modern approach)</li>
@@ -118,7 +118,7 @@ permalink: /publishing.html
                         workflow automatically deploys your site.
                     </div>
 
-                    <h5 class="mt-4">Step 4: Choose your folder (optional)</h5>
+                    <h3 class="mt-4">Step 4: Choose your folder (optional)</h3>
                     <p>If you want to publish only a subfolder (e.g. <code>docs/</code>), edit the workflow YAML
                         before committing. Find the <code>path</code> line under the upload step and change it:</p>
                     <pre class="bg-light p-3 rounded"><code>- name: Upload artifact
@@ -126,7 +126,7 @@ permalink: /publishing.html
   with:
     path: './docs'   # <-- change this to your folder</code></pre>
 
-                    <h5 class="mt-4">Step 5: Find your URL</h5>
+                    <h3 class="mt-4">Step 5: Find your URL</h3>
                     <p>After the workflow runs (usually under a minute), go back to <strong>Settings → Pages</strong>.
                         Your live URL is displayed at the top of the page.</p>
                 </section>
@@ -140,7 +140,7 @@ permalink: /publishing.html
                         Pages for you using the <code>gh</code> command-line tool. This is faster and avoids
                         navigating the GitHub UI.</p>
 
-                    <h5 class="mt-4">Step 1: Ask the agent to install <code>gh</code></h5>
+                    <h3 class="mt-4">Step 1: Ask the agent to install <code>gh</code></h3>
                     <p>Open the chat with your coding agent and paste this prompt:</p>
                     <div class="bg-light border rounded p-3 my-3 font-monospace text-sm">
                         Install the GitHub CLI tool (<code>gh</code>) on my machine. Check whether it's already
@@ -154,7 +154,7 @@ permalink: /publishing.html
                         Follow the prompts — you'll authenticate once and <code>gh</code> stores credentials securely.
                     </div>
 
-                    <h5 class="mt-4">Step 2: Ask the agent to enable GitHub Pages</h5>
+                    <h3 class="mt-4">Step 2: Ask the agent to enable GitHub Pages</h3>
                     <p>Once <code>gh</code> is authenticated, give the agent this prompt:</p>
                     <div class="bg-light border rounded p-3 my-3 font-monospace text-sm">
                         Use the <code>gh</code> CLI to enable GitHub Pages for this repository. Publish the contents
@@ -172,7 +172,7 @@ permalink: /publishing.html
                         <li>Report the resulting URL</li>
                     </ol>
 
-                    <h5 class="mt-4">Step 3: Verify the deployment</h5>
+                    <h3 class="mt-4">Step 3: Verify the deployment</h3>
                     <p>Ask the agent to check that the deployment succeeded:</p>
                     <div class="bg-light border rounded p-3 my-3 font-monospace text-sm">
                         Run <code>gh run list</code> to check the status of the Pages deployment workflow. Once it
@@ -191,7 +191,7 @@ permalink: /publishing.html
 
                 <!-- Example workflow YAML -->
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">The GitHub Actions Workflow File</h3>
+                    <h2 class="text-berkeley-blue">The GitHub Actions Workflow File</h2>
                     <p>For reference, here is the standard workflow that both methods produce. It lives at
                         <code>.github/workflows/pages.yml</code> in your repo:</p>
                     <pre class="bg-light p-3 rounded" style="font-size: 0.85rem;"><code>name: Deploy to GitHub Pages
@@ -239,7 +239,7 @@ jobs:
 
                 <!-- Summary -->
                 <section class="py-4">
-                    <h3 class="text-berkeley-blue">Quick Reference</h3>
+                    <h2 class="text-berkeley-blue">Quick Reference</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead class="bg-light">
