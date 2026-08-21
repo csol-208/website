@@ -52,11 +52,20 @@ permalink: /setup.html
 
                 <section class="py-3">
                     <h2 class="text-berkeley-blue">AI Coding Assistants</h2>
-                    <p><strong>GitHub Copilot</strong> is our primary AI pair programmer (free for students via the
-                        GitHub Education pack). We'll also explore <strong>Continue.dev</strong>, an open-source
-                        alternative that works with local and open-source models.</p>
-                    <p>In Module 3, we go deeper — learning to work directly with LLM APIs, use local models, and build
-                        tool-using agents.</p>
+                    <p><strong>Kilo Code</strong> is our primary AI coding agent — an open-source VS Code extension
+                        that reads and edits files in your project, runs commands, and works through multi-step
+                        tasks rather than just completing the line you are typing.</p>
+                    <p>We point Kilo Code at <strong>OpenRouter</strong>, which is a single API that brokers requests
+                        to models from many different providers. That arrangement is deliberate: it means the model
+                        is a setting you can change, not a property of your editor, and you can see exactly what each
+                        request costs. The instructional team provides your OpenRouter key, so there is nothing to
+                        buy.</p>
+                    <p><strong>GitHub Copilot</strong> stays available as a secondary assistant, and it is free for
+                        students through the GitHub Education pack. It is good at inline autocomplete, which is a
+                        genuinely different tool from an agent working across your whole repository. Using both is
+                        useful for seeing where each approach helps.</p>
+                    <p>In Module 3, we go deeper — calling LLM APIs directly, running local models, and building
+                        tool-using agents of our own.</p>
                 </section>
 
                 <hr class="horizontal dark my-4">
@@ -120,12 +129,13 @@ permalink: /setup.html
 
                 <hr class="horizontal dark my-5">
 
-                <!-- Initial Setup Steps (from Session 1) -->
+                <!-- Initial Setup Steps -->
                 <section class="pt-2 pb-3">
                     <h2 class="text-berkeley-blue">Initial Setup</h2>
                     <p class="lead text-muted">
-                        Today we're setting up your GitHub account, applying for the Student Developer Pack, and
-                        configuring VS Code. GitHub approval takes about 72 hours, so complete this early!
+                        We set up your GitHub account, apply for the Student Developer Pack, then install VS Code and
+                        get Kilo Code talking to OpenRouter. Start the GitHub steps early &mdash; approval takes about
+                        72 hours, and it gates the optional Copilot step at the end.
                     </p>
                 </section>
 
@@ -206,13 +216,77 @@ permalink: /setup.html
                     <h3 class="text-berkeley-blue">6. Install VS Code</h3>
                     <p>Download from <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>
                         and install for your operating system.</p>
+                    <p class="text-muted">This step does not depend on your Student Developer Pack approval, so you can
+                        do it right away.</p>
+                </section>
 
-                    <h4 class="mt-4">Install GitHub Copilot Extension</h4>
-                    <p>Once your Student Developer Pack is approved:</p>
+                <hr class="horizontal dark my-4">
+
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">7. Install Kilo Code</h3>
+                    <p>Kilo Code is our primary AI coding agent.</p>
                     <ol>
                         <li>Open VS Code</li>
                         <li>Press <code>Ctrl+Shift+X</code> (Windows/Linux) or <code>Cmd+Shift+X</code> (Mac) to open
                             Extensions</li>
+                        <li>Search for <strong>Kilo Code</strong> &mdash; the one you want is published by
+                            <strong>Kilo Code</strong>, listed as <em>"Kilo Code: AI Coding Agent, Copilot, and
+                                Autocomplete"</em> (identifier <code>kilocode.Kilo-Code</code>)</li>
+                        <li>Click <strong>Install</strong></li>
+                        <li>Click the Kilo Code icon in the VS Code sidebar to open it</li>
+                    </ol>
+                    <p>On first launch Kilo Code asks you to sign in to a free Kilo account. You can use your GitHub
+                        or Google login. This account is just for the extension &mdash; the models we use come from
+                        OpenRouter, which you set up in the next step.</p>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">8. Connect Kilo Code to OpenRouter</h3>
+                    <p><strong>We provide your OpenRouter key.</strong> You do not need an OpenRouter account and you
+                        will not be asked for a credit card. The instructional team will send each of you an individual
+                        key.</p>
+
+                    <p>Once you have your key:</p>
+                    <ol>
+                        <li>In the Kilo Code panel, click the <strong>gear icon</strong> to open Settings</li>
+                        <li>Go to the <strong>Providers</strong> tab</li>
+                        <li>Set the provider to <strong>OpenRouter</strong></li>
+                        <li>Paste your key into the API key field</li>
+                        <li>Choose a model from the model list &mdash; we will announce which model to start with</li>
+                        <li>Save, then try a small task to confirm it responds</li>
+                    </ol>
+
+                    <div class="alert alert-warning mt-3">
+                        <strong>Treat your key like a password.</strong> It is tied to a course budget, so anyone who
+                        has it can spend that budget. Keep it in the Kilo Code settings panel only. Never paste it into
+                        a file in your repository, a notebook, a chat message, or an issue &mdash; anything committed
+                        to GitHub is very hard to truly erase. If you think your key has leaked, tell us and we will
+                        revoke it and issue a new one; that is a routine fix, not a problem you will be in trouble
+                        for.
+                    </div>
+
+                    <div class="alert alert-info mt-3">
+                        <strong>Your key has a spending cap.</strong> Every request costs a fraction of a cent to a
+                        few cents depending on the model and how much context it reads. The cap exists so that a
+                        runaway agent loop cannot run up a real bill &mdash; it is a safety net, not a quota you are
+                        being graded against. If you hit it, tell us and we will raise it. Watching what your requests
+                        actually cost is part of what we want you to learn: these tools are not free, and the
+                        environmental and financial costs of inference are a topic we return to later in the course.
+                    </div>
+                </section>
+
+                <hr class="horizontal dark my-4">
+
+                <section class="py-3">
+                    <h3 class="text-berkeley-blue">9. Install GitHub Copilot <span
+                            class="badge bg-secondary align-middle">optional</span></h3>
+                    <p>Copilot is our secondary assistant, useful for inline autocomplete as you type. It is free for
+                        students, so it is worth setting up, but Kilo Code is what we use in class. Do this once your
+                        Student Developer Pack is approved.</p>
+                    <ol>
+                        <li>Open the Extensions panel again</li>
                         <li>Search for "GitHub Copilot"</li>
                         <li>Click Install</li>
                         <li>Sign in with your GitHub account when prompted</li>
@@ -237,7 +311,7 @@ permalink: /setup.html
                 <hr class="horizontal dark my-4">
 
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">7. Python Setup (Optional Pre-Work)</h3>
+                    <h3 class="text-berkeley-blue">10. Python Setup (Optional Pre-Work)</h3>
                     <p>We'll do this together in class, but if you'd like a head start:</p>
                     <ol>
                         <li>Download Miniforge from <a href="https://github.com/conda-forge/miniforge"
@@ -258,17 +332,16 @@ permalink: /setup.html
                         <li>☑️ Student Developer Pack application submitted</li>
                         <li>☑️ GitHub Classroom invitation accepted</li>
                         <li>☑️ VS Code installed</li>
+                        <li>☑️ Kilo Code extension installed and signed in</li>
+                        <li>☑️ OpenRouter key pasted into Kilo Code, and a first task answered</li>
                     </ul>
 
-                    <p class="mt-4"><strong>Next session:</strong> We'll start working with real climate data. Make sure
-                        your Copilot access is approved!</p>
+                    <p class="mt-4"><strong>Next session:</strong> We'll start working with real climate data, driving
+                        Kilo Code against a real repository. Come with the checklist above working &mdash; if anything
+                        is stuck, bring it to office hours or the start of class rather than fighting it alone.</p>
                 </section>
 
             </div>
         </div>
     </div>
 </div>
-
-<!-- Footer -->
-<footer class="footer pt-5 mt-5">
-    <div class="container">
