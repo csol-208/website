@@ -2,10 +2,11 @@
 Course Title: CSOL-208: Data Science for Climate Solutions
 
 Instructor: Carl Boettiger, <cboettig@berkeley.edu>, https://carlboettiger.info
-Grad Student Instructor: Elena Stacy <estacy@berkeley.edu>  https://sites.google.com/berkeley.edu/estacy 
+Grad Student Instructor: Gaby May Lagunes (she/her) <TODO: email>  https://dlab.berkeley.edu/people/gaby-may-lagunes
 
 Room: 311 Wellman
-Times: M/W 12:10p - 1:50pm
+Term: Fall 2026
+Times: W 12:00p - 1:49pm (one session per week, 14 weeks)
 
 Description: This course integrates data science fundamentals into the climate solutions curriculum, reframing them for an AI-driven era. Students practice data organization, visualization, and quantitative analysis by communicating in natural language with AI systems. Alongside hands-on, team based projects, we also critically examine AI’s reliability, ethics, and environmental impacts. Graduates will be equipped to interpret data leveraging cutting-edge technology to drive climate solutions in their fields.
 
