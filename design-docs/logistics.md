@@ -2,7 +2,7 @@
 Course Title: CSOL-208: Data Science for Climate Solutions
 
 Instructor: Carl Boettiger, <cboettig@berkeley.edu>, https://carlboettiger.info
-Grad Student Instructor: Gaby May Lagunes (she/her) <TODO: email>  https://dlab.berkeley.edu/people/gaby-may-lagunes
+Grad Student Instructor: Gaby May Lagunes (she/her) <gmaylagunes@berkeley.edu>  https://dlab.berkeley.edu/people/gaby-may-lagunes
 
 Room: 311 Wellman
 Term: Fall 2026
