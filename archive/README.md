@@ -4,9 +4,13 @@ Each subdirectory here is a static snapshot of the CSOL-208 site as it stood at 
 end of a given offering. Eleventy copies `archive/` to `_site/previous/`, so
 `archive/spring-2026/` is served at `/previous/spring-2026/`.
 
-Snapshots contain HTML only. They reference the shared `../../assets/` and
+Snapshots are mostly HTML. They reference the shared `../../assets/` and
 `../../images/` directories rather than carrying their own copies, and each page
 carries an "Archived" banner plus `robots: noindex`.
+
+The exception is an image that belongs only to a past offering, such as a former
+GSI's headshot: move the file into the snapshot directory and repoint that page at
+it locally, so the live site stops shipping it.
 
 The matching source tree for each snapshot is available under the git tag of the
 same name (e.g. `git show spring-2026`).
