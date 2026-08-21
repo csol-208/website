@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "assets": "assets" });
     eleventyConfig.addPassthroughCopy({ "images": "images" });
 
+    // Archived course sites from previous offerings (static snapshots)
+    eleventyConfig.addPassthroughCopy({ "archive": "previous" });
+
     // Copy markdown files from src to root of output
     eleventyConfig.addPassthroughCopy("src/*.md");
 
