@@ -254,9 +254,25 @@ permalink: /setup.html
                         <li>Go to the <strong>Providers</strong> tab</li>
                         <li>Set the provider to <strong>OpenRouter</strong></li>
                         <li>Paste your key into the API key field</li>
-                        <li>Choose a model from the model list &mdash; we will announce which model to start with</li>
+                        <li>Choose a model from the model list &mdash; start with
+                            <code>~deepseek/deepseek-v4-flash-latest</code></li>
                         <li>Save, then try a small task to confirm it responds</li>
                     </ol>
+
+                    <p>That first model is cheap and fast and handles most of what we do. When something needs more
+                        reasoning than it can manage, switch to <code>z-ai/glm-5.2</code> and try again. Switching is
+                        one dropdown, and noticing <em>when</em> you needed to switch is a useful thing to pay
+                        attention to.</p>
+
+                    <p>These are starting points, not settings to leave alone. We will work with a range of models and
+                        platforms over the semester &mdash; open-weight and proprietary, hosted and local &mdash;
+                        because the differences between them are part of the subject. Nothing in this setup locks you
+                        into one provider.</p>
+
+                    <p class="text-muted">The <code>~</code> in that first slug marks a floating alias: it always
+                        resolves to the newest release in the DeepSeek V4 Flash family, so the actual model behind it
+                        may change during the semester. That is convenient, and it is also a reason not to assume a
+                        result you got in September will reproduce exactly in November.</p>
 
                     <div class="alert alert-warning mt-3">
                         <strong>Treat your key like a password.</strong> It is tied to a course budget, so anyone who
