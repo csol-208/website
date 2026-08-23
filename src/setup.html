@@ -55,11 +55,11 @@ permalink: /setup.html
                     <p><strong>Kilo Code</strong> is our primary AI coding agent — an open-source VS Code extension
                         that reads and edits files in your project, runs commands, and works through multi-step
                         tasks rather than just completing the line you are typing.</p>
-                    <p>We point Kilo Code at <strong>OpenRouter</strong>, which is a single API that brokers requests
-                        to models from many different providers. That arrangement is deliberate: it means the model
-                        is a setting you can change, not a property of your editor, and you can see exactly what each
-                        request costs. The instructional team provides your OpenRouter key, so there is nothing to
-                        buy.</p>
+                    <p>The model itself comes from somewhere else &mdash; a brokering API like OpenRouter, a
+                        university cluster, or a model running on your own laptop. That separation is deliberate and
+                        worth internalizing: the model is a setting you can change, not a property of your editor. We
+                        will change it more than once this semester. The instructional team supplies whatever key and
+                        endpoint we are using at the time, so there is nothing for you to buy.</p>
                     <p><strong>GitHub Copilot</strong> stays available as a secondary assistant, and it is free for
                         students through the GitHub Education pack. It is good at inline autocomplete, which is a
                         genuinely different tool from an agent working across your whole repository. Using both is
@@ -134,7 +134,7 @@ permalink: /setup.html
                     <h2 class="text-berkeley-blue">Initial Setup</h2>
                     <p class="lead text-muted">
                         We set up your GitHub account, apply for the Student Developer Pack, then install VS Code and
-                        get Kilo Code talking to OpenRouter. Start the GitHub steps early &mdash; approval takes about
+                        get Kilo Code talking to a model. Start the GitHub steps early &mdash; approval takes about
                         72 hours, and it gates the optional Copilot step at the end.
                     </p>
                 </section>
@@ -237,42 +237,58 @@ permalink: /setup.html
                     </ol>
                     <p>On first launch Kilo Code asks you to sign in to a free Kilo account. You can use your GitHub
                         or Google login. This account is just for the extension &mdash; the models we use come from
-                        OpenRouter, which you set up in the next step.</p>
+                        whatever endpoint we are using, which you set up in the next step.</p>
                 </section>
 
                 <hr class="horizontal dark my-4">
 
                 <section class="py-3">
-                    <h3 class="text-berkeley-blue">8. Connect Kilo Code to OpenRouter</h3>
-                    <p><strong>We provide your OpenRouter key.</strong> You do not need an OpenRouter account and you
-                        will not be asked for a credit card. The instructional team will send each of you an individual
-                        key.</p>
+                    <h3 class="text-berkeley-blue">8. Connect Kilo Code to a Model</h3>
+                    <p>Kilo Code is just the interface. The model lives somewhere else, and you point the extension at
+                        it with three pieces of information: <strong>where the endpoint is</strong>, <strong>a
+                            key</strong>, and <strong>which model to ask for</strong>. All three are settings. None of
+                        them are permanent.</p>
 
-                    <p>Once you have your key:</p>
+                    <div class="alert alert-info">
+                        <strong>We give you the current three.</strong> Before the first session the instructional team
+                        sends you a key along with the endpoint and starting model to use with it. You will not need
+                        your own account anywhere, and you will not be asked for a credit card.
+                    </div>
+
+                    <p><strong>Expect all three to change during the semester.</strong> New models ship constantly, and
+                        the sensible choice in September is often not the sensible choice in October. We will move
+                        between providers as that happens &mdash; sometimes a hosted commercial API, sometimes an
+                        academic cluster, sometimes a model running on your own laptop. Learning to swap the backend
+                        without rebuilding your workflow is part of the point, so treat the current settings as
+                        disposable and get comfortable changing them.</p>
+
+                    <h4 class="mt-4">If we give you an OpenRouter key</h4>
                     <ol>
                         <li>In the Kilo Code panel, click the <strong>gear icon</strong> to open Settings</li>
                         <li>Go to the <strong>Providers</strong> tab</li>
                         <li>Set the provider to <strong>OpenRouter</strong></li>
                         <li>Paste your key into the API key field</li>
-                        <li>Choose a model from the model list &mdash; start with
-                            <code>~deepseek/deepseek-v4-flash-latest</code></li>
+                        <li>Pick the model we named out of the model list</li>
                         <li>Save, then try a small task to confirm it responds</li>
                     </ol>
 
-                    <p>That first model is cheap and fast and handles most of what we do. When something needs more
-                        reasoning than it can manage, switch to <code>z-ai/glm-5.2</code> and try again. Switching is
-                        one dropdown, and noticing <em>when</em> you needed to switch is a useful thing to pay
-                        attention to.</p>
+                    <h4 class="mt-4">If we give you an endpoint and a key</h4>
+                    <p>Anything that speaks the OpenAI API &mdash; a university cluster, a lab server, a model running
+                        locally &mdash; is set up the same way.</p>
+                    <ol>
+                        <li>Settings &rarr; <strong>Providers</strong> tab &rarr; <strong>Custom provider</strong></li>
+                        <li>Give it a <strong>Provider ID</strong> and <strong>Display name</strong> (anything
+                            recognizable)</li>
+                        <li>Set <strong>Provider API</strong> to <strong>OpenAI Compatible</strong></li>
+                        <li>Paste the <strong>Base URL</strong> and <strong>API key</strong> we sent you</li>
+                        <li>Under <strong>Models</strong>, pick the model we named &mdash; Kilo Code can often
+                            auto-detect the list from the endpoint</li>
+                        <li>Save, then try a small task to confirm it responds</li>
+                    </ol>
 
-                    <p>These are starting points, not settings to leave alone. We will work with a range of models and
-                        platforms over the semester &mdash; open-weight and proprietary, hosted and local &mdash;
-                        because the differences between them are part of the subject. Nothing in this setup locks you
-                        into one provider.</p>
-
-                    <p class="text-muted">The <code>~</code> in that first slug marks a floating alias: it always
-                        resolves to the newest release in the DeepSeek V4 Flash family, so the actual model behind it
-                        may change during the semester. That is convenient, and it is also a reason not to assume a
-                        result you got in September will reproduce exactly in November.</p>
+                    <p class="text-muted">Switching model is one dropdown once a provider is configured. If a model is
+                        struggling with a task, trying a stronger one is a reasonable move &mdash; and noticing
+                        <em>when</em> you needed to reach for it is worth paying attention to.</p>
 
                     <div class="alert alert-warning mt-3">
                         <strong>Treat your key like a password.</strong> It is tied to a course budget, so anyone who
@@ -284,12 +300,12 @@ permalink: /setup.html
                     </div>
 
                     <div class="alert alert-info mt-3">
-                        <strong>Your key has a spending cap.</strong> Every request costs a fraction of a cent to a
-                        few cents depending on the model and how much context it reads. The cap exists so that a
-                        runaway agent loop cannot run up a real bill &mdash; it is a safety net, not a quota you are
-                        being graded against. If you hit it, tell us and we will raise it. Watching what your requests
-                        actually cost is part of what we want you to learn: these tools are not free, and the
-                        environmental and financial costs of inference are a topic we return to later in the course.
+                        <strong>Keys may carry a spending cap.</strong> Requests cost real money &mdash; a fraction of
+                        a cent to a few cents each, depending on the model and how much context it reads. Where we set
+                        a cap it is a safety net against a runaway agent loop, not a quota you are graded against; if
+                        you hit it, tell us and we will raise it. Watching what your requests actually cost is part of
+                        what we want you to learn, and the financial and environmental costs of inference are a topic
+                        we return to later in the course.
                     </div>
                 </section>
 
@@ -349,7 +365,7 @@ permalink: /setup.html
                         <li>☑️ GitHub Classroom invitation accepted</li>
                         <li>☑️ VS Code installed</li>
                         <li>☑️ Kilo Code extension installed and signed in</li>
-                        <li>☑️ OpenRouter key pasted into Kilo Code, and a first task answered</li>
+                        <li>☑️ Course key and endpoint configured in Kilo Code, and a first task answered</li>
                     </ul>
 
                     <p class="mt-4"><strong>Next session:</strong> We'll start working with real climate data, driving
